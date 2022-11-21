@@ -39,6 +39,8 @@ svg{
   width: 100vw;
   height: 100vh;
   position: fixed;
+  touch-action: manipulation;
+  
 
 }
   
