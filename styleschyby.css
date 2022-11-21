@@ -98,6 +98,8 @@ p {
 .popisek {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+ 
  margin: 8px;
 padding: 8px;
   border-radius: 8%;
@@ -110,10 +112,10 @@ padding: 8px;
 
 
 .notification {
-  
+  display: flex;
   display: block;
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: -1px;
   width: auto;
@@ -124,9 +126,10 @@ padding: 8px;
   border-radius: 50%;
   color: rgb(26, 156, 26);
   box-shadow: 1px 1px 5px #000;
-  background-image: url("img/BD_loznice.svg");
+background-color: gold;
   width: 50px;
   animation: heartbeat 1.4s linear infinite;
+  align-self: center;
 }
 
 
@@ -161,8 +164,8 @@ element.style {
 .disabled { pointer-events:none; opacity:.5; }
 
 .show {
-  height: 10vh;
-  width: 150px;
+  height: 30px;
+  width: 30px;
   
   
 }
