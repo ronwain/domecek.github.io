@@ -305,3 +305,15 @@ body {
   }
 }
 */
+
+/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+@media only screen and (orientation:portrait) {
+  .otoc { display:block; }
+  .kytarista { display:none; }
+}
+ 
+/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+@media only screen and (orientation:landscape) {
+  .otoc { display:none; }
+  .kytarista { display:block; }
+}
