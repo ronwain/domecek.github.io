@@ -18,16 +18,18 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   background-color: #5290f9;
+}
 
-
+button {
+  color: #000;
 }
   
 .kytarista{
-  display:flex;
-  flex-direction: row;
-  position: fixed;
+  
+  position: absolute;
   left:0px;
   top:0px;
+  right: 0px;
   width: 100vw;
   height: 100vh;
 ;
@@ -38,12 +40,30 @@ body {
 svg{
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  
   touch-action: manipulation;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
   
 
 }
   
+
+.zpet {
+  
+  background: white;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+  
+  overflow: hidden;
+  margin:8px;
+}
 
   
   #mySizeChart:hover {
@@ -76,11 +96,25 @@ p {
   font-size: 18px;
 }
 
+.popisek {
+  display: flex;
+  flex-direction: column;
+ margin: 8px;
+padding: 8px;
+  border-radius: 8%;
+  color: #fff;
+  box-shadow: 1px 1px 5px #000;
+  border: 2px solid #fff;
+ background-color: #5290f9;
+  width: 100px;
+}
+
+
 .notification {
   
   display: block;
   text-align: center;
-  font-size: 11px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: -1px;
   width: auto;
@@ -92,16 +126,17 @@ p {
   color: #fff;
   box-shadow: 1px 1px 5px #000;
   border: 2px solid #fff;
-  background-color: #b60000;
-
+ 
   width: 100px;
 }
+
 
 .disabled { pointer-events:none; opacity:.5; }
 
 .show {
   height: 10vh;
   width: 150px;
+  
   
 }
 

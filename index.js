@@ -176,3 +176,8 @@ function increaseCount(){
       $(this).off("click", increaseCount);  
       $(this).addClass("disabled"); // For visual clue that button no longer works
  }
+
+
+
+ 
+ 
