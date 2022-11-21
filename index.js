@@ -159,6 +159,37 @@ window.onclick = function(event) {
 }
 
 
+// Ne-button 
+var ebModalKyta = document.getElementById('mySizeChartModal-kytarista');
+
+// Get the button that opens the modal
+var ebBtnKyta = document.getElementById("mySizeChart-kytarista");
+
+// Get the <span> element that closes the modal
+var ebSpan = document.getElementsByClassName("ebcf_close8")[0];
+
+// When the user clicks the button, open the modal 
+ebBtnKyta.onclick = function() {
+    ebModalKyta.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+ebSpan.onclick = function() {
+    ebModalKyta.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == ebModalKyta) {
+      ebModalKyta.style.display = "none";
+    }
+}
+
+
+
+
+
 /*počítání*/
 
 var counter=0;
