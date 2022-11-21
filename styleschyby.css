@@ -3,6 +3,7 @@
 /*styl pro vše*/
 body, html {
   height: 100%;
+  margin: 0%;
 }
 
 
@@ -24,40 +25,24 @@ body {
 .kytarista{
   display:flex;
   flex-direction: row;
-  position:fixed;
+  position: fixed;
   left:0px;
   top:0px;
-  width:100%;
-  height:100%;
+  width: 100vw;
+  height: 100vh;
 ;
   background-color: #5290f9;
 
 }
 
-#kytarista{
+svg{
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   position: fixed;
 
 }
   
 
- #Vrstva_2 {
-    z-index: 100;
-    width: 100vw;
-    height: 90vh;
-    position: fixed;
-    
-  }
-
-  
- #Vrstva_1 {
-  z-index: 99;
-  width: 100vw;
-  height: 90vh;
-  position: fixed;
-  
-}
   
   #mySizeChart:hover {
 fill:#b60000;
@@ -78,7 +63,9 @@ fill:#b60000;
     margin: 0;
   }
   
-
+.zpet {
+  z-index: 10000;
+}
  
 
 
@@ -264,14 +251,19 @@ cursor: pointer;
 
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-  html {
+body {
     transform: rotate(-90deg);
-  
+    transform-origin: left top;
     width: 100vh;
     height: 100vw;
     overflow-x: hidden;
     position: absolute;
     top: 100%;
     left: 0;
+  }
+
+  .kytarista {
+    width: 100%;
+    height: 100%;
   }
 }
