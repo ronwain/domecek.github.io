@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="styleschyby.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="index.js" type="module"></script>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -36,20 +38,23 @@
    <div class="otoc"> <p>otočte své zařízení</p></div>
 
   
-    <div class="kytarista" > 
+    <div class="kytarista col-12" > 
       
 <div class="navbar"> 
-  <div class="popisek"> 
-    <p> Našel jsi </p> <div class="show"> </div> <p> ze 7 hvězdiček</p>
+  <div class="popisek">
+    
+    <p> Našel jsi <span class="notification"> <a id="clicks">0</a>/7 </span>  hvězdiček</p>
   <button>Hotovo</button>
   <button><a href="#" id="mySizeChart-kytarista">Hint</a></button>
   <button><a href="index.html">domů</a></button></div>
 
+
  
 
+
   </div>
-<div class="plocha">
-      <svg id="kytarista" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3840px"
+<div class="plocha col-12">
+      <svg id="kytarista" class="svg col-12"version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3840px"
       height="2160px" viewBox="0 0 3840 2160" style="enable-background:new 0 0 3840 2160;" xml:space="preserve">
    <style type="text/css">
      .st0{fill:#DEAF29;}
@@ -408,13 +413,14 @@
                <path class="st14" d="M1472,1703H992V406c0-4.4,3.6-8,8-8h464c4.4,0,8,3.6,8,8V1703z"/>
                <rect x="976" y="406" class="st15" width="16" height="1297"/>
              </g>
-             <g>
+             <g >
 
                <!--stenice-->
-       <a href="#" id="mySizeChart-stenice" class="btn">
-               <polygon class="st16" points="2634,0 2634,632 2444.6,0 						"/> 
-               <path class="st4" d="M2634,632L2444.6,0c0,0,53.9,295.8-110.8,371.6C2501.4,454.7,2634,632,2634,632z"/>
-               <path class="st17" d="M2634,632L2444.6,0c0,0,53.9,182.2-110.8,257.9C2501.4,341,2634,632,2634,632z"/>
+       
+               <polygon class="st16 " points="2634,0 2634,632 2444.6,0 						"/> 
+               <path class="st4 " d="M2634,632L2444.6,0c0,0,53.9,295.8-110.8,371.6C2501.4,454.7,2634,632,2634,632z"/>
+               <a href="#" id="mySizeChart-stenice" class="btn">
+               <path class="st17 btn" d="M2634,632L2444.6,0c0,0,53.9,182.2-110.8,257.9C2501.4,341,2634,632,2634,632z"/>
               </a>
               </g>
              <g>
@@ -1148,8 +1154,8 @@
            </g>
            <circle class="st47" cx="2151.4" cy="897.1" r="25.5"/>
              <!--sluchátka-->
-           <a href="#" id="mySizeChart-sluchatka" class="btn">
-           <path class="st47" d="M2224.9,1180.9h-128.6c-34.1,0-61.8-27.7-61.8-61.8V799.5c0-34.1,27.7-61.8,61.8-61.8h128.6
+           <a href="#" id="mySizeChart-sluchatka" >
+           <path   class="st47 btn" d="M2224.9,1180.9h-128.6c-34.1,0-61.8-27.7-61.8-61.8V799.5c0-34.1,27.7-61.8,61.8-61.8h128.6
              c34.1,0,61.8,27.7,61.8,61.8v319.6C2286.7,1153.2,2259,1180.9,2224.9,1180.9z"/>
             </a><g>
              <circle class="st50" cx="2166.2" cy="920.1" r="9"/>

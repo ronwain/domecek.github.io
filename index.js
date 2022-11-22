@@ -177,19 +177,22 @@ window.onclick = function(event) {
 
 /*počítání*/
 
-var counter=0;
-function count()
-{
-  $('.show').addClass("notification");
-            $(".show").html(counter);
-}
- $('.btn').on('click', increaseCount);
+
+ var clicks = 0
+ function clickME(event) {
+   clicks += 1
  
-function increaseCount(){
-      counter++
-      count();
-      // Job done, now disconnect this button from this event handler
-      $(this).off("click", increaseCount);  
-      $(this).addClass("disabled"); // For visual clue that button no longer works
+   document.getElementById("clicks").innerText = clicks // innerText is more suitable in this case
+ 
+ 
  }
+ 
+ document.querySelectorAll(`path`) // select all buttons
+   .forEach( // loop through the elements
+     // addEventListener with options once:true. once option designed exactly for your purposes, to fire event only once
+     el => el.addEventListener(`click`, clickME, {once: true})
+   ) 
+
+
+   
 
