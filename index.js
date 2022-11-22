@@ -27,7 +27,7 @@ window.onclick = function(event) {
       ebModalSluchatka.style.display = "none";
     }
 }
-*/
+
 //Štěnice
 // 
 var ebModalStenice = document.getElementById('mySizeChartModal-stenice');
@@ -85,31 +85,31 @@ window.onclick = function(event) {
     }
 }
 
-
+*/
 // Ne-button 
-var ebModalKyta = document.getElementById('mySizeChartModal-kytarista');
+var modalHintLoz = document.getElementById('loznice-hint-modal');
 
 // Get the button that opens the modal
-var ebBtnKyta = document.getElementById("mySizeChart-kytarista");
+var btnHintLoz = document.getElementById("loznice-hint");
 
 // Get the <span> element that closes the modal
-var ebSpan = document.getElementsByClassName("ebcf_close8")[0];
+var spanHintLoz = document.getElementsByClassName("loznice--hint")[0];
 
 // When the user clicks the button, open the modal 
-ebBtnKyta.onclick = function() {
-    ebModalKyta.style.display = "block";
+btnHintLoz.onclick = function() {
+  modalHintLoz.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-ebSpan.onclick = function() {
-    ebModalKyta.style.display = "none";
+spanHintLoz.onclick = function() {
+    modalHintLoz.style.display = "none";
 }
 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == ebModalKyta) {
-      ebModalKyta.style.display = "none";
+    if (event.target == modalHintLoz) {
+      modalHintLoz.style.display = "none";
     }
 }
 
@@ -117,7 +117,7 @@ window.onclick = function(event) {
 
 
 
-/*počítání*/
+/*počítání*
 
 
  var clicks = 0
@@ -144,7 +144,20 @@ window.onclick = function(event) {
    ) 
 
   
-
    
    
+   /*
 
+   const open_btn = document.querySelector('.open-btn')
+   const close_btn = document.querySelector('.close-btn')
+   const nav = document.querySelectorAll('.nav')
+   
+   open_btn.addEventListener('click', () => {
+       nav.forEach(nav_el => nav_el.classList.add('visible'))
+   })
+   
+   close_btn.addEventListener('click', () => {
+       nav.forEach(nav_el => nav_el.classList.remove('visible'))
+   })
+
+   */
