@@ -30,7 +30,7 @@
   }
  img{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     position: fixed;
   
   }
@@ -98,7 +98,7 @@
     text-align: center;
     text-transform: uppercase;
     background: url(img/danger.jpg);
-    -webkit-background-clip: text;
+    
     color: transparent;
     animation: text-background 20s linear infinite;
   }
