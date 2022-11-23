@@ -115,7 +115,42 @@ a {
 
 #gohome {
   display: none;
+
 }
+
+/*home*/
+.home--star {
+  position: absolute;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  color: #fff;
+  background-color: #020811a1;
+  font-size: 18px;
+
+}
+
+h2 {
+  font-size: 18px; 
+}
+
+.star--place {
+  height: 10vh;
+  width: 10vw;
+}
+ img  {
+  height: 5vh;
+  width: 5vw;
+  color: #000000;
+  animation: heartbeat 5s linear infinite;
+ }
+
+
 /*modaly*/
 
 .modal-content {
