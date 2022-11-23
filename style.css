@@ -2,7 +2,10 @@
 
 body, html {
   height: 100%;
+  width: 100%;
   margin: 0%;
+  padding: 0%
+  
 }
 
 
@@ -13,11 +16,13 @@ body, html {
   font-family: 'Open Sans', sans-serif
 }
 
-button {
+button{
   background-color: white;
   color: black;
   text-transform: uppercase;
 }
+
+
 
 a {
   color: black;
@@ -104,22 +109,28 @@ a {
   width: 50%;
   border-radius: 16px;
   color: #000;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  
 }
 
-/* Ne button */
-
-
-.loznice--hint-c {
-  color: #aaaaaa;
+/* Hint button */
+.hint-close {
+  color: #ffffff;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+ 
   
 }
 
-.loznice--hint-c:hover,
-.loznice--hint-c:focus {
+.hint-close:hover,
+.hint-close:focus {
 color: #000;
 text-decoration: none;
 cursor: pointer;
@@ -135,9 +146,94 @@ cursor: pointer;
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  z-index: 1000;
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  z-index: 1001;
+  width: 40%;
+  
+  
 }
+
+
+
+
+.ebcf_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  z-index: 1000;
+  width: 40%;
+  
+}
+
+
+/* Modal Content */
+.ebcf_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 16px;
+ 
+}
+
+/* The Close Button */
+.ebcf_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  
+}
+
+
+.ebcf_close:hover,
+.ebcf_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ebcf_close1:hover,
+.ebcf_close1:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* modal - obrázky*/
+.modal-star {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1001;
+  background-image: url(img/hvezda.svg);
+
+}
+
+.modal-img {
+  width: 250px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1001;
+}
+
+#img-kocka {
+  background-image: url(img/domecek.png);
+}
+
+
 
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation:portrait) {

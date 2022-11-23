@@ -39,8 +39,8 @@
             <button class="col-12"><a href="index.html"> zpět </a></button>
         </div>
 
-      <div class="loznice--svg">
-        <svg  id="loznice--svg" version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <div class="loznice--svg col-12">
+        <svg  id="loznice--svg" class="fluid col-12"  version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="3840px" height="2160px" viewBox="0 0 3840 2160" style="enable-background:new 0 0 3840 2160;" xml:space="preserve">
      <style type="text/css">
        .st0{fill:#DEAF29;}
@@ -1596,7 +1596,8 @@
          <line class="st66" x1="2121.1" y1="922.6" x2="2147.1" y2="922.6"/>
        </g>
      </g>
-     <g id="kocka">
+     <g id="kocka" class="btn">
+      <a href="#" id="mySizeChart">
        <g>
          <path class="st67" d="M3298.4,1410.1c5.1,6.9,14.4,17.9,15.8,20.4c9,15.7,14.9,33.5,17.6,51.4c2.9,19.5,4,40.5-3.1,59.2
            c-6.1,15.9-13.5,24.6-20.4,46.5c-3.3,10.3-0.6,41-7.5,46c-6.9,5.1-12.5-2-14.1-7.3c-12.3-42.3,14-83.2,17.8-111.1
@@ -1721,7 +1722,8 @@
              C3291.7,1605.9,3291.3,1605.7,3291.1,1605.5L3291.1,1605.5z M3291.1,1605.5L3291.1,1605.5L3291.1,1605.5L3291.1,1605.5z"/>
          </g>
        </g>
-     </g>
+      </a></g>
+    
      <g id="stenice">
        <g>
          <path class="st71" d="M2594.8,314.7c-0.8,0.1-6.1,5.4-6.9,6.5c-1.2,1.6-3.9,5.7-5.5,6.7c-1.6,1.1-2.6,3.2-4.7,3.4
@@ -5825,14 +5827,23 @@
  <div id="loznice-hint-modal" class="loznice--hint">
 
   <div class="modal-content">
-    <span class="loznice--hint-c">&times;</span>
     <p> Hledej sluchátka kočku štěnici kvetoucí kytku schody .... </p>
+    <span class="hint-close"> Zavřít</span>
   </div>
 </div>
 
 
+<div id="mySizeChartModal" class="ebcf_modal">
 
+  <div class="modal-content">
+    <div class="modal-star"></div>
+    <span class="ebcf_close">&times;</span>
+    <h3>Domácí zvířata</h3>
+    <div class="modal-img" id="img-kocka"></div>
+    <p>	Domácí zvířata mají ve své srsti, kůži a výměšcích žláz obsaženy látky, které mohou u lidí vyvolat alergické reakce. Proto lidé trpící alergií, kteří žijí v domácnosti se zvířaty, by měli být velmi obezřetní. Nezbytné je dodržovat zvýšenou hygienu, zejména mytí rukou i pravidelný a důkladný úklid, pokud s námi v domácnosti žije pes, kočka nebo jiný mazlíček, protože hrozí přenos některých infekčních onemocnění (tzv. zoonóz), např. toxoplazmózy (zvlášť nebezpečné pro těhotné ženy), toxokarózy (škrkavky), bartonelózy (nemoc z kočičího škrábnutí), zvířecího svrabu (prašivina) a dalších. Riziko klesá, pokud zvíře je chováno pouze doma a nechodí ven. Dbáme na pravidelné odčervování a očkování u psů a koček.  </p>
+  </div>
+</div>
         
-      
+
   </body>
 </html>

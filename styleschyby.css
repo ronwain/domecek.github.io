@@ -26,8 +26,13 @@ body {
 
 button {
   color: #000;
+  background-color: #fff;
 }
  
+.tlacitko {
+  color: #000;
+  background-color: #fff;
+}
 
 .kytarista{
   

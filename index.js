@@ -56,7 +56,7 @@ window.onclick = function(event) {
     }
 }
 
-
+*/
 
 
 // Kočka 
@@ -66,7 +66,7 @@ var ebModal = document.getElementById('mySizeChartModal');
 var ebBtn = document.getElementById("mySizeChart");
 
 // Get the <span> element that closes the modal
-var ebSpan = document.getElementsByClassName("ebcf_close")[0];
+var ebSpan = document.getElementsByClassName("ebcf_modal")[0];
 
 // When the user clicks the button, open the modal 
 ebBtn.onclick = function() {
@@ -85,7 +85,7 @@ window.onclick = function(event) {
     }
 }
 
-*/
+
 // Ne-button 
 var modalHintLoz = document.getElementById('loznice-hint-modal');
 
@@ -117,7 +117,7 @@ window.onclick = function(event) {
 
 
 
-/*počítání*
+/*počítání*/
 
 
  var clicks = 0
@@ -146,7 +146,7 @@ window.onclick = function(event) {
   
    
    
-   /*
+
 
    const open_btn = document.querySelector('.open-btn')
    const close_btn = document.querySelector('.close-btn')
@@ -159,5 +159,3 @@ window.onclick = function(event) {
    close_btn.addEventListener('click', () => {
        nav.forEach(nav_el => nav_el.classList.remove('visible'))
    })
-
-   */
