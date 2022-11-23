@@ -1,11 +1,10 @@
 
-
 body, html {
   height: 100%;
   width: 100%;
   margin: 0%;
-  padding: 0%
-  
+  padding: 0%;
+    height: 100vh;
 }
 
 
@@ -29,7 +28,9 @@ a {
   text-transform: uppercase;
   
 }
-
+.otoc {
+  color:#000
+}
 .screen{
   position: fixed;
   left:0px;
@@ -37,23 +38,39 @@ a {
   right: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: #000000;
+  background-color: black;
   display: flex;
   flex-direction: row;
+  overflow: auto;
+  
 }
 
 #loznice--svg{
-  width: 100vw;
-  height: 100vh;
-  touch-action: manipulation;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  z-index: -1;
-}
-.popisek {
+  min-width: 100vw;
+  min-height: 90vh;
+  max-width: 177.7777vh;
+  max-height: 56.25vw ;
+  width: auto;
+  height: auto;
   position: relative;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translate(-50%, 0%);
+}
+
+
+.loznice--svg {
+
+    height: 100vh;
+ 
+}
+
+.popisek {
+  height: 20vw;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +79,7 @@ a {
   color: #fff;
   background-color: #020811a1;
   z-index: 10000;
+  position: absolute;
 }
 
 .popisek--star {
@@ -234,6 +252,16 @@ cursor: pointer;
 }
 
 
+.home--star {
+  height: 100%;
+}
+
+.star--place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation:portrait) {

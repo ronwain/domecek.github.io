@@ -3,59 +3,45 @@ console.log("moc nečum");
 //Slucahtka
 // 
 var ebModalSluchatka = document.getElementById('mySizeChartModal-sluchatka');
-
 // Get the button that opens the modal
 var ebBtnSluchatka = document.getElementById("mySizeChart-sluchatka");
-
 // Get the <span> element that closes the modal
 var ebSpan = document.getElementsByClassName("ebcf_close1")[0];
-
 // When the user clicks the button, open the modal 
 ebBtnSluchatka.onclick = function() {
     ebModalSluchatka.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 ebSpan.onclick = function() {
     ebModalSluchatka.style.display = "none";
 }
-
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == ebModalSluchatka) {
       ebModalSluchatka.style.display = "none";
     }
 }
-
 //Štěnice
 // 
 var ebModalStenice = document.getElementById('mySizeChartModal-stenice');
-
 // Get the button that opens the modal
 var ebBtnStenice = document.getElementById("mySizeChart-stenice");
-
 // Get the <span> element that closes the modal
 var ebSpan = document.getElementsByClassName("ebcf_close2")[0];
-
 // When the user clicks the button, open the modal 
 ebBtnStenice.onclick = function() {
     ebModalStenice.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 ebSpan.onclick = function() {
     ebModalStenice.style.display = "none";
 }
-
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == ebModalStenice) {
       ebModalStenice.style.display = "none";
     }
 }
-
 */
 
 
