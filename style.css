@@ -7,7 +7,6 @@ body, html {
     height: 100vh;
 }
 
-
 * {
   box-sizing: border-box;
   color: white;
@@ -21,16 +20,16 @@ button{
   text-transform: uppercase;
 }
 
-
-
 a {
   color: black;
-  text-transform: uppercase;
-  
+  text-transform: uppercase;  
 }
+
 .otoc {
   color:#000
 }
+
+/*screen svg*/
 .screen{
   position: fixed;
   left:0px;
@@ -60,13 +59,11 @@ a {
   transform: translate(-50%, 0%);
 }
 
-
 .loznice--svg {
-
     height: 100vh;
- 
 }
 
+/*popisek*/
 .popisek {
   height: 20vw;
   width: 20vw;
@@ -116,8 +113,11 @@ a {
   color: red;
 }
 
+#gohome {
+  display: none;
+}
+/*modaly*/
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -130,11 +130,16 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 
-/* Hint button */
-.hint-close, .close_kocka, .close_postel {
+/*Loznice*/
+
+
+/* close button */
+.hint-close, 
+
+.close_kocka, 
+.close_postel {
   color: #ffffff;
   float: right;
   font-size: 28px;
@@ -142,20 +147,24 @@ a {
   background-color: white;
   color: black;
   text-transform: uppercase;
- 
-  
 }
 
 .hint-close:hover,
-.close_postel:hover,
 .hint-close:focus,
+
+.close_kocka:hover,
+.close_kocka:focus
+.close_postel:hover,
 .close_postel:focus {
 color: #000;
 text-decoration: none;
 cursor: pointer;
 }
 
-.loznice--hint, .loznice--modal, .loznice--modal_postel {
+.loznice--hint,
+ 
+.loznice--modal, 
+.loznice--modal_postel {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   padding-top: 100px; /* Location of the box */
@@ -168,41 +177,9 @@ cursor: pointer;
   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
   z-index: 1001;
   width: 40%;
-  
-  
 }
 
 
-
-
-
-
-
-
-
-/* The Close Button */
-.close_kocka, .close_postel {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  
-}
-
-
-.ebcf_close:hover,
-.ebcf_close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close_kocka:hover,
-.close_kocka:focus {
-color: #000;
-text-decoration: none;
-cursor: pointer;
-}
 
 /* modal - obrázky*/
 .modal-star {
@@ -213,7 +190,6 @@ cursor: pointer;
   background-position: center;
   z-index: 1001;
   background-image: url(img/hvezda.svg);
-
 }
 
 .modal-img {
@@ -229,10 +205,6 @@ cursor: pointer;
   background-image: url(img/domecek.png);
 }
 
-
-.home--star {
-  height: 100%;
-}
 
 .star--place {
   display: flex;
