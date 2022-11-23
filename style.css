@@ -41,8 +41,7 @@ a {
   background-color: black;
   display: flex;
   flex-direction: row;
-  overflow: auto;
-  
+  overflow: auto; 
 }
 
 #loznice--svg{
@@ -135,7 +134,7 @@ a {
 }
 
 /* Hint button */
-.hint-close {
+.hint-close, .close_kocka, .close_postel {
   color: #ffffff;
   float: right;
   font-size: 28px;
@@ -148,13 +147,15 @@ a {
 }
 
 .hint-close:hover,
-.hint-close:focus {
+.close_postel:hover,
+.hint-close:focus,
+.close_postel:focus {
 color: #000;
 text-decoration: none;
 cursor: pointer;
 }
 
-.loznice--hint {
+.loznice--hint, .loznice--modal, .loznice--modal_postel {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   padding-top: 100px; /* Location of the box */
@@ -174,36 +175,13 @@ cursor: pointer;
 
 
 
-.ebcf_modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  z-index: 1000;
-  width: 40%;
-  
-}
 
 
-/* Modal Content */
-.ebcf_modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
-  border-radius: 16px;
- 
-}
+
+
 
 /* The Close Button */
-.ebcf_close {
+.close_kocka, .close_postel {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -219,8 +197,8 @@ cursor: pointer;
   cursor: pointer;
 }
 
-.ebcf_close1:hover,
-.ebcf_close1:focus {
+.close_kocka:hover,
+.close_kocka:focus {
 color: #000;
 text-decoration: none;
 cursor: pointer;
