@@ -14,16 +14,107 @@ body, html {
   font-family: 'Open Sans', sans-serif
 }
 
-button{
+a {
+  text-decoration: none;
+}
+
+.button--style{
   background-color: white;
   color: black;
   text-transform: uppercase;
+  padding: 1%;
+  margin: 1%;
+  height: auto;
+  width: 100%;
+}
+
+.button--style:hover {
+  background-color: forestgreen;
 }
 
 a {
   color: black;
   text-transform: uppercase;  
 }
+
+/*
+#gohome {
+  position: relative;
+  background-color: #2ecc71;
+}
+
+#gohome:before {
+  content: "JDI";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #95cc2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+#gohome::after {
+  content: "ZPĚT";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(179, 221, 147);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: bottom;
+  transform: rotateX(270deg);
+  transition: all 0.5s;
+  transition-delay: 0.25s
+}
+
+#gohome:hover:before, #gohome:hover:after {
+  transform: rotateX(0deg); 
+}
+*/
+
+.pulse {
+  
+  background-color: #58ea00;
+  
+
+  text-align: center;
+  line-height: 100px;
+  
+  position: relative;
+}
+
+
+.pulse:before, .pulse:after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border: 1px solid #58ea00;
+  
+  animation: pulse 1.5s linear infinite;
+}
+
+.pulse:after {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.5); opacity: 0 }
+  50% { transform: scale(1); opacity: 1 }
+  100% { transform: scale(1.2); opacity: 0 }
+}
+
 
 .otoc {
   color:#000
@@ -65,7 +156,7 @@ a {
 
 /*popisek*/
 .popisek {
-  height: 15vw;
+  height: auto;
   width: 15vw;
   display: flex;
   flex-direction: column;
@@ -78,6 +169,7 @@ a {
   position: absolute;
   right: 0;
   top: 0;
+  padding: 1%;
 }
 
 .popisek--star {
@@ -87,6 +179,7 @@ a {
   background-position: center;
   color: #000000;
   animation: heartbeat 3s linear infinite;
+  margin: 3%;
 }
 
 @keyframes heartbeat {
@@ -152,11 +245,10 @@ h2 {
   animation: heartbeat 5s linear infinite;
  }
 
-
 /*modaly*/
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #fefefe00;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -204,7 +296,7 @@ cursor: pointer;
 .loznice--modal_postel {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  padding-top: 100px; /* Location of the box */
+   /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -213,6 +305,7 @@ cursor: pointer;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
   z-index: 1001;
+
  
 }
 
@@ -251,6 +344,14 @@ cursor: pointer;
   height: calc(100%/8);
 }
 
+.star--counter {
+  width: auto;
+  height: auto;
+  max-height: 10vh;
+  max-width: 10vw;
+  color: #000;
+}
+
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation:portrait) {
   .otoc { display:block; }
@@ -263,8 +364,47 @@ cursor: pointer;
   .screen { display:block; }
 }
 
+
+@media  (max-width: 576px)
+ {
+  h2, p {
+ font-size: 16px;
+  }
+  .button--style{
+    font-size: 16px;
+  }
+  }
+  @media (min-width: 576px) and (max-width: 768px)
+ {
+    h2, p {
+   font-size: 16px;
+    }
+    .button--style{
+      font-size: 16px;
+    }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px)
+    {
+       h2, p {
+      font-size: 16px;
+       }
+       .button--style{
+         font-size: 16px;
+       }
+       .popisek--star {
+        width: auto;
+        height: auto;
+        max-height: 15vh;
+        max-width: 15vw;
+       }
+       }
+
 /*
-xs: 0,
-sm: 480px,
-md: 768px,
-lg: 1024px*/
+	xs
+<576px	sm
+≥576px	md
+≥768px	lg
+≥992px	xl
+≥1200px	xxl
+≥1400px
