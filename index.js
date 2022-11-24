@@ -1,4 +1,11 @@
 console.log("moc nečum");
+console.log(sessionStorage)
+
+
+// Retrieve vlož věci ze storage
+//document.getElementById("pokus").innerHTML = window.sessionStorage.getItem("lastname");
+
+console.log("moc nečum");
 
 
 //Modaly apky
@@ -128,6 +135,8 @@ window.onclick = function(event) {
 
    if(clicks == 2) {
     document.getElementById('gohome').style.display = 'block'; 
+    document.getElementById('zmiz').style.display = 'none';
+    document.getElementById('zmiz2').style.display = 'none';
 
 } else {
     document.getElementById('gohome').style.display = 'none';
