@@ -91,34 +91,6 @@ window.onclick = function(event) {
     }
 }
 
-// Ne-button 
-var modalHintLoz = document.getElementById('loznice-hint-modal');
-
-// Get the button that opens the modal
-var btnHintLoz = document.getElementById("loznice-hint");
-
-// Get the <span> element that closes the modal
-var spanHintLoz = document.getElementsByClassName("loznice--hint")[0];
-
-// When the user clicks the button, open the modal 
-btnHintLoz.onclick = function() {
-  modalHintLoz.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-spanHintLoz.onclick = function() {
-    modalHintLoz.style.display = "none";
-}
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modalHintLoz) {
-      modalHintLoz.style.display = "none";
-    }
-}
-
-
 
 
 
