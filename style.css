@@ -230,8 +230,9 @@ a {
 
 }
 
-h2 {
+h2, p {
   font-size: 18px; 
+  max-width: 100%;
 }
 
 .star--place {
@@ -386,6 +387,7 @@ cursor: pointer;
     h2, p {
    font-size: 16px;
    color: aqua;
+  
     }
     .button--style{
       font-size: 16px;
@@ -435,9 +437,31 @@ cursor: pointer;
        }
        @media (min-width: 1200px) and (max-width: 1400px)
        {
+        h2, p {
+          font-size: 16px;
+          color: rgb(220, 43, 226);
+           }
         .modal-star {
           width: 48px;
           height: 48px;
         }
- 
+        .modal-content {
+
+          margin-top: 10%;
+      }
+       }
+
+       @media (min-width: 1400px) 
+       {
+        h2, p {
+          font-size: 16px;
+          color: rgb(226, 134, 43);
+           }
+        .modal-star {
+          width: 48px;
+          height: 48px;
+        }
+        .modal-content {
+          margin-top: 15%;
+      }
        }
