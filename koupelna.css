@@ -24,9 +24,8 @@
 
 
 /* close button */
-.hint-close, 
-.close_karma, 
-.close_postel {
+.hint-close
+{
   color: #ffffff;
   float: right;
   font-size: 28px;
@@ -34,23 +33,28 @@
   background-color: white;
   color: black;
   text-transform: uppercase;
+  margin: 20%;
 }
 
-.hint-close:hover,
-.hint-close:focus,
-.close_karma:hover,
-.close_karma:focus
-.close_postel:hover,
-.close_postel:focus {
+.close_karma
+.close_vana
+.close_plisen
+{
+display: none;
+}
+
+.hint-close:hover
+ {
 color: #000;
 text-decoration: none;
 cursor: pointer;
 }
 
-.koupelna--hint,
- 
-.koupelna--modal, 
-.koupelna--modal_postel {
+.koupelna--hint, 
+.koupelna--modal_karma,
+.koupelna--modal_vana,
+.koupelna--modal_plisen
+{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
    /* Location of the box */
@@ -74,5 +78,15 @@ cursor: pointer;
 
 
 #img-karma {
-  background-image: url(img/domecek.png);
+  background-image: url(img/kocka.svg);
 }
+
+
+#img-vana {
+    background-image: url(img/kocka.svg);
+  }
+
+  
+#img-plisen {
+    background-image: url(img/kocka.svg);
+  }
