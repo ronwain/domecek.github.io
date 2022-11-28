@@ -104,7 +104,7 @@ window.onclick = function(event) {
    if(clicks == 2) {
     document.getElementById('gohome').style.display = 'block'; 
     document.getElementById('zmiz').style.display = 'none';
-    document.getElementById('zmiz2').style.display = 'none';
+    document.getElementById('loznice-hint').style.display = 'none';
     localStorage.setItem("mistnost", "loznice")
 
 } else {
