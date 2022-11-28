@@ -105,7 +105,8 @@ window.onclick = function(event) {
     document.getElementById('gohome').style.display = 'block'; 
     document.getElementById('zmiz').style.display = 'none';
     document.getElementById('loznice-hint').style.display = 'none';
-    localStorage.setItem("mistnost", "loznice")
+    sessionStorage.setItem("mistnost", "loznice")
+    console.log(sessionStorage)
 
 } else {
     document.getElementById('gohome').style.display = 'none';
@@ -124,8 +125,8 @@ window.onclick = function(event) {
 // Retrieve vlož věci ze storage
 document.getElementById("pokus").innerHTML = window.sessionStorage.getItem("mistnost");
 
-console.log(sessionStorage)
-   /*
+
+/*
 
 
    const open_btn = document.querySelector('.open-btn')

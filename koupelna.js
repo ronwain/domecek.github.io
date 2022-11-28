@@ -38,24 +38,15 @@ window.onclick = function(event) {
 //Modaly Koupelna
 // Karma
 var ebModal1 = document.getElementById('koupelna--modal_karma');
-
-// Get the button that opens the modal
 var ebBtn1 = document.getElementById("koupelna--link_karma");
-
-// Get the <span> element that closes the modal
 var ebSpan1 = document.getElementsByClassName("koupelna--modal_karma")[0];
 
-// When the user clicks the button, open the modal 
 ebBtn1.onclick = function() {
     ebModal1.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
 ebSpan1.onclick = function() {
     ebModal1.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == ebModal1) {
         ebModal1.style.display = "none";
@@ -154,6 +145,7 @@ window.onclick = function(event) {
         ebModal6.style.display = "none";
     }
 }
+
 /*počítání*/
 
 
