@@ -2,10 +2,6 @@ console.log("moc nečum");
 console.log(sessionStorage)
 
 
-// Retrieve vlož věci ze storage
-//document.getElementById("pokus").innerHTML = window.sessionStorage.getItem("lastname");
-
-console.log("moc nečum");
 
 
 //Modaly apky
@@ -109,6 +105,7 @@ window.onclick = function(event) {
     document.getElementById('gohome').style.display = 'block'; 
     document.getElementById('zmiz').style.display = 'none';
     document.getElementById('zmiz2').style.display = 'none';
+    localStorage.setItem("mistnost", "loznice")
 
 } else {
     document.getElementById('gohome').style.display = 'none';
@@ -124,6 +121,10 @@ window.onclick = function(event) {
 
   
    
+// Retrieve vlož věci ze storage
+document.getElementById("pokus").innerHTML = window.sessionStorage.getItem("mistnost");
+
+console.log(sessionStorage)
    /*
 
 

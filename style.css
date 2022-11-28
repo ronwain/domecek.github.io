@@ -37,7 +37,7 @@ a {
   text-transform: uppercase;  
 }
 
-/*
+
 #gohome {
   position: relative;
   background-color: #2ecc71;
@@ -180,6 +180,7 @@ a {
   color: #000000;
   animation: heartbeat 3s linear infinite;
   margin: 3%;
+  aspect-ratio: 1 / 1;
 }
 
 @keyframes heartbeat {
@@ -218,7 +219,7 @@ a {
   position: absolute;
   z-index: 1000;
   height: 100vh;
-  width: 10vw;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,7 +283,6 @@ h2, p {
 
 .hint-close:hover,
 .hint-close:focus,
-
 .close_kocka:hover,
 .close_kocka:focus
 .close_postel:hover,
@@ -349,8 +349,10 @@ cursor: pointer;
 .star--counter {
   width: auto;
   height: auto;
-  max-height: 10vh;
-  max-width: 10vw;
+  max-height: 20vh;
+  max-width: 20vw;
+  margin: 2% 0 2% 0 ;
+  font-size: 14px;
   color: #000;
 }
 
@@ -457,6 +459,12 @@ cursor: pointer;
           font-size: 16px;
           color: rgb(226, 134, 43);
            }
+
+           h2 {
+            font-size: 24px;
+            color: rgb(226, 134, 43);
+             }
+
         .modal-star {
           width: 48px;
           height: 48px;
