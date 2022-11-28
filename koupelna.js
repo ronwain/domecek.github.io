@@ -118,6 +118,42 @@ window.onclick = function(event) {
 }
 
 
+// Podlaha
+var ebModal5 = document.getElementById('koupelna--modal_podlaha');
+var ebBtn5 = document.getElementById("koupelna--link_podlaha");
+var ebSpan5 = document.getElementsByClassName("koupelna--modal_podlaha")[0];
+
+
+ebBtn5.onclick = function() {
+    ebModal5.style.display = "block";
+}
+ebSpan5.onclick = function() {
+    ebModal5.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == ebModal5) {
+        ebModal5.style.display = "none";
+    }
+}
+
+
+// Pradlo
+var ebModal6 = document.getElementById('koupelna--modal_pradlo');
+var ebBtn6 = document.getElementById("koupelna--link_pradlo");
+var ebSpan6 = document.getElementsByClassName("koupelna--modal_pradlo")[0];
+
+
+ebBtn6.onclick = function() {
+    ebModal6.style.display = "block";
+}
+ebSpan6.onclick = function() {
+    ebModal6.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == ebModal5) {
+        ebModal6.style.display = "none";
+    }
+}
 /*počítání*/
 
 
@@ -129,7 +165,7 @@ function clickME(event) {
 
   console.log(clicks)
 
-  if(clicks == 3) {
+  if(clicks == 6) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('koupelna-hint').style.display = 'none';

@@ -40,6 +40,8 @@
 .close_vana
 .close_plisen
 .close_chemikalie
+.close_podlaha
+.close_pradlo
 {
 display: none;
 }
@@ -55,7 +57,9 @@ cursor: pointer;
 .koupelna--modal_karma,
 .koupelna--modal_vana,
 .koupelna--modal_plisen,
-.koupelna--modal_chemikalie
+.koupelna--modal_chemikalie,
+.koupelna--modal_podlaha,
+.koupelna--modal_pradlo
 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -95,5 +99,13 @@ cursor: pointer;
 
 
   #img-chemikalie {
+    background-image: url(img/kocka.svg);
+  }
+
+  #img-podlaha {
+    background-image: url(img/kocka.svg);
+  }
+
+  #img-pradlo {
     background-image: url(img/kocka.svg);
   }
