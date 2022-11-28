@@ -39,6 +39,7 @@
 .close_karma
 .close_vana
 .close_plisen
+.close_chemikalie
 {
 display: none;
 }
@@ -53,7 +54,8 @@ cursor: pointer;
 .koupelna--hint, 
 .koupelna--modal_karma,
 .koupelna--modal_vana,
-.koupelna--modal_plisen
+.koupelna--modal_plisen,
+.koupelna--modal_chemikalie
 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -88,5 +90,10 @@ cursor: pointer;
 
   
 #img-plisen {
+    background-image: url(img/kocka.svg);
+  }
+
+
+  #img-chemikalie {
     background-image: url(img/kocka.svg);
   }

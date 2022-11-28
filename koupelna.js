@@ -99,6 +99,24 @@ window.onclick = function(event) {
 }
 
 
+// Chemikalie
+var ebModal4 = document.getElementById('koupelna--modal_chemikalie');
+var ebBtn4 = document.getElementById("koupelna--link_chemikalie");
+var ebSpan4 = document.getElementsByClassName("koupelna--modal_chemikalie")[0];
+
+
+ebBtn4.onclick = function() {
+    ebModal4.style.display = "block";
+}
+ebSpan4.onclick = function() {
+    ebModal4.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == ebModal4) {
+        ebModal4.style.display = "none";
+    }
+}
+
 
 /*počítání*/
 
