@@ -37,14 +37,15 @@ window.onclick = function(event) {
 
 //Modaly Ložnice
 // Kočka 
-var ebModal = document.getElementById('koupelna--modal_kocka');
-var ebBtn = document.getElementById("koupelna--link_kocka");
+var ebModal = document.getElementById('koupelna--modal_karma');
+var ebBtn = document.getElementById("koupelna--link_karma");
 var ebSpan = document.getElementsByClassName("koupelna--modal")[0];
 
 
 ebBtn.onclick = function() {
     ebModal.style.display = "block";
 }
+
 
 ebSpan.onclick = function() {
     ebModal.style.display = "none";

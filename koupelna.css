@@ -25,7 +25,7 @@
 
 /* close button */
 .hint-close, 
-.close_kocka, 
+.close_karma, 
 .close_postel {
   color: #ffffff;
   float: right;
@@ -38,8 +38,8 @@
 
 .hint-close:hover,
 .hint-close:focus,
-.close_kocka:hover,
-.close_kocka:focus
+.close_karma:hover,
+.close_karma:focus
 .close_postel:hover,
 .close_postel:focus {
 color: #000;
@@ -73,6 +73,6 @@ cursor: pointer;
 
 
 
-#img-kocka {
+#img-karma {
   background-image: url(img/domecek.png);
 }
