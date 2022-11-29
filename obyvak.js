@@ -37,11 +37,11 @@ window.onclick = function(event) {
 
 
 //Modaly obyvak
-/*
-// Kouř
-var ebModal1 = document.getElementById('obyvak--modal_kour');
-var ebBtn1 = document.getElementById("obyvak--link_kour");
-var ebSpan1 = document.getElementsByClassName("obyvak--modal_kour")[0];
+
+//Okno
+var ebModal1 = document.getElementById('obyvak--modal_okno');
+var ebBtn1 = document.getElementById("obyvak--link_okno");
+var ebSpan1 = document.getElementsByClassName("obyvak--modal_okno")[0];
 
 ebBtn1.onclick = function() {
     ebModal1.style.display = "block";
@@ -54,7 +54,7 @@ window.onclick = function(event) {
         ebModal1.style.display = "none";
     }
 }
-*/
+
 
 
 
@@ -115,12 +115,12 @@ window.onclick = function(event) {
 }
 
 
-/*
+
 
 // Pradlo
-var ebModal6 = document.getElementById('koupelna--modal_pradlo');
-var ebBtn6 = document.getElementById("koupelna--link_pradlo");
-var ebSpan6 = document.getElementsByClassName("koupelna--modal_pradlo")[0];
+var ebModal6 = document.getElementById('obyvak--modal_teplota');
+var ebBtn6 = document.getElementById("obyvak--link_teplota");
+var ebSpan6 = document.getElementsByClassName("obyvak--modal_teplota")[0];
 
 
 ebBtn6.onclick = function() {
@@ -135,7 +135,7 @@ window.onclick = function(event) {
     }
 }
 
-*/
+
 /*počítání*/
 
 
