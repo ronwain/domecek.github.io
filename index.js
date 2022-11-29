@@ -126,6 +126,8 @@ window.onclick = function(event) {
 document.getElementById("pokus").innerHTML = window.sessionStorage.getItem("mistnost");
 
 
+var myArray = [sessionStorage];
+
 /*
 
 
