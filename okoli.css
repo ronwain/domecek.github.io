@@ -36,10 +36,12 @@
 }
 
 .close_hluk
-.close_cigarety
-.close_prasky
-.close_okno
-.close_teplota
+.close_kreslo
+.close_odpad
+.close_pumpa
+.close_pes
+.close_hromada
+.close_komin
 {
 display: none;
 }
@@ -53,7 +55,12 @@ cursor: pointer;
 
 .okoli--hint, 
 .okoli--modal_hluk,
-.obyvak--modal_prasky
+.okoli--modal_kreslo,
+.okoli--modal_odpad,
+.okoli--modal_pumpa,
+.okoli--modal_pes,
+.okoli--modal_hromada,
+.okoli--modal_komin
 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -69,6 +76,7 @@ cursor: pointer;
 }
 
 
+
 /* modal - obrázky*/
 
 
@@ -78,7 +86,7 @@ cursor: pointer;
   background-image: url(img/kocka.svg);
 }
 
-#img-cigarety {
+#img-kreslo {
   background-image: url(img/kocka.svg);
 }
 

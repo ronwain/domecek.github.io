@@ -52,11 +52,11 @@ window.onclick = function(event) {
         ebModal1.style.display = "none";
     }
 }
-/*
-// Vana
-var ebModal2 = document.getElementById('koupelna--modal_vana');
-var ebBtn2 = document.getElementById("koupelna--link_vana");
-var ebSpan2 = document.getElementsByClassName("koupelna--modal_vana")[0];
+
+// Křeslo
+var ebModal2 = document.getElementById('okoli--modal_kreslo');
+var ebBtn2 = document.getElementById("okoli--link_kreslo");
+var ebSpan2 = document.getElementsByClassName("okoli--modal_kreslo")[0];
 
 
 ebBtn2.onclick = function() {
@@ -71,10 +71,10 @@ window.onclick = function(event) {
     }
 }
 
-// Plisen
-var ebModal3 = document.getElementById('koupelna--modal_plisen');
-var ebBtn3 = document.getElementById("koupelna--link_plisen");
-var ebSpan3 = document.getElementsByClassName("koupelna--modal_plisen")[0];
+// Odpad
+var ebModal3 = document.getElementById('okoli--modal_odpad');
+var ebBtn3 = document.getElementById("okoli--link_odpad");
+var ebSpan3 = document.getElementsByClassName("okoli--modal_odpad")[0];
 
 
 ebBtn3.onclick = function() {
@@ -90,10 +90,10 @@ window.onclick = function(event) {
 }
 
 
-// Chemikalie
-var ebModal4 = document.getElementById('koupelna--modal_chemikalie');
-var ebBtn4 = document.getElementById("koupelna--link_chemikalie");
-var ebSpan4 = document.getElementsByClassName("koupelna--modal_chemikalie")[0];
+// Pumpa
+var ebModal4 = document.getElementById('okoli--modal_pumpa');
+var ebBtn4 = document.getElementById("okoli--link_pumpa");
+var ebSpan4 = document.getElementsByClassName("okoli--modal_pumpa")[0];
 
 
 ebBtn4.onclick = function() {
@@ -109,10 +109,10 @@ window.onclick = function(event) {
 }
 
 
-// Podlaha
-var ebModal5 = document.getElementById('koupelna--modal_podlaha');
-var ebBtn5 = document.getElementById("koupelna--link_podlaha");
-var ebSpan5 = document.getElementsByClassName("koupelna--modal_podlaha")[0];
+// Pes
+var ebModal5 = document.getElementById('okoli--modal_pes');
+var ebBtn5 = document.getElementById("okoli--link_pes");
+var ebSpan5 = document.getElementsByClassName("okoli--modal_pes")[0];
 
 
 ebBtn5.onclick = function() {
@@ -128,10 +128,10 @@ window.onclick = function(event) {
 }
 
 
-// Pradlo
-var ebModal6 = document.getElementById('koupelna--modal_pradlo');
-var ebBtn6 = document.getElementById("koupelna--link_pradlo");
-var ebSpan6 = document.getElementsByClassName("koupelna--modal_pradlo")[0];
+// Hromada
+var ebModal6 = document.getElementById('okoli--modal_hromada');
+var ebBtn6 = document.getElementById("okoli--link_hromada");
+var ebSpan6 = document.getElementsByClassName("okoli--modal_hromada")[0];
 
 
 ebBtn6.onclick = function() {
@@ -146,6 +146,25 @@ window.onclick = function(event) {
     }
 }
 
+
+// Komin
+var ebModal7 = document.getElementById('okoli--modal_komin');
+var ebBtn7 = document.getElementById("okoli--link_komin");
+var ebSpan7 = document.getElementsByClassName("okoli--modal_komin")[0];
+
+
+ebBtn7.onclick = function() {
+    ebModal7.style.display = "block";
+}
+ebSpan7.onclick = function() {
+    ebModal7.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == ebModal5) {
+        ebModal7.style.display = "none";
+    }
+}
+
 /*počítání*/
 
 
@@ -157,7 +176,7 @@ function clickME(event) {
 
   console.log(clicks)
 
-  if(clicks == 6) {
+  if(clicks == 7) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('koupelna-hint').style.display = 'none';
