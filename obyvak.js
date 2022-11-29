@@ -117,7 +117,7 @@ window.onclick = function(event) {
 
 
 
-// Pradlo
+// Teplota
 var ebModal6 = document.getElementById('obyvak--modal_teplota');
 var ebBtn6 = document.getElementById("obyvak--link_teplota");
 var ebSpan6 = document.getElementsByClassName("obyvak--modal_teplota")[0];
