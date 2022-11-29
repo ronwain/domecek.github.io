@@ -37,6 +37,7 @@ window.onclick = function(event) {
 
 
 //Modaly obyvak
+/*
 // Kouř
 var ebModal1 = document.getElementById('obyvak--modal_kour');
 var ebBtn1 = document.getElementById("obyvak--link_kour");
@@ -53,29 +54,33 @@ window.onclick = function(event) {
         ebModal1.style.display = "none";
     }
 }
-
-// Vana
-var ebModal2 = document.getElementById('koupelna--modal_vana');
-var ebBtn2 = document.getElementById("koupelna--link_vana");
-var ebSpan2 = document.getElementsByClassName("koupelna--modal_vana")[0];
+*/
 
 
-ebBtn2.onclick = function() {
-    ebModal2.style.display = "block";
+
+
+// Svíčky
+var ebModal4 = document.getElementById('obyvak--modal_svicky');
+var ebBtn4 = document.getElementById("obyvak--link_svicky");
+var ebSpan4 = document.getElementsByClassName("obyvak--modal_svicky")[0];
+
+ebBtn4.onclick = function() {
+    ebModal4.style.display = "block";
 }
-ebSpan2.onclick = function() {
-    ebModal2.style.display = "none";
+ebSpan4.onclick = function() {
+    ebModal4.style.display = "none";
 }
 window.onclick = function(event) {
-    if (event.target == ebModal2) {
-        ebModal2.style.display = "none";
+    if (event.target == ebModal4) {
+        ebModal4.style.display = "none";
     }
 }
 
-// Plisen
-var ebModal3 = document.getElementById('koupelna--modal_plisen');
-var ebBtn3 = document.getElementById("koupelna--link_plisen");
-var ebSpan3 = document.getElementsByClassName("koupelna--modal_plisen")[0];
+
+// Cigarety
+var ebModal3 = document.getElementById('obyvak--modal_cigarety');
+var ebBtn3 = document.getElementById("obyvak--link_cigarety");
+var ebSpan3 = document.getElementsByClassName("obyvak--modal_cigarety")[0];
 
 
 ebBtn3.onclick = function() {
@@ -91,29 +96,10 @@ window.onclick = function(event) {
 }
 
 
-// Chemikalie
-var ebModal4 = document.getElementById('koupelna--modal_chemikalie');
-var ebBtn4 = document.getElementById("koupelna--link_chemikalie");
-var ebSpan4 = document.getElementsByClassName("koupelna--modal_chemikalie")[0];
-
-
-ebBtn4.onclick = function() {
-    ebModal4.style.display = "block";
-}
-ebSpan4.onclick = function() {
-    ebModal4.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == ebModal4) {
-        ebModal4.style.display = "none";
-    }
-}
-
-
-// Podlaha
-var ebModal5 = document.getElementById('koupelna--modal_podlaha');
-var ebBtn5 = document.getElementById("koupelna--link_podlaha");
-var ebSpan5 = document.getElementsByClassName("koupelna--modal_podlaha")[0];
+// Prasky
+var ebModal5 = document.getElementById('obyvak--modal_prasky');
+var ebBtn5 = document.getElementById("obyvak--link_prasky");
+var ebSpan5 = document.getElementsByClassName("obyvak--modal_prasky")[0];
 
 
 ebBtn5.onclick = function() {
@@ -128,6 +114,8 @@ window.onclick = function(event) {
     }
 }
 
+
+/*
 
 // Pradlo
 var ebModal6 = document.getElementById('koupelna--modal_pradlo');
@@ -147,7 +135,7 @@ window.onclick = function(event) {
     }
 }
 
-
+*/
 /*počítání*/
 
 
