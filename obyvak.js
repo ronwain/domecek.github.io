@@ -1,7 +1,6 @@
 console.log("obyvak")
 
 
-//Modaly apky
 
 // HINT button 
 var modalHintOb = document.getElementById('obyvak-hint-modal');
@@ -147,11 +146,12 @@ function clickME(event) {
 
   console.log(clicks)
 
-  if(clicks == 5) {
+  if(clicks == 2) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('obyvak-hint').style.display = 'none';
-   localStorage.setItem("mistnost", "obyvak")
+   sessionStorage.setItem('pokoj', "obývák")
+   console.log(sessionStorage)
 
 } else {
    document.getElementById('gohome').style.display = 'none';
@@ -164,3 +164,23 @@ document.querySelectorAll(`a`) // select all buttons
   .forEach( 
     el => el.addEventListener(`click`, clickME, {once: true})
   ) 
+
+  
+  
+  let userStr = '{"name":"Sammy","email":"sammy@example.com","plan":"Pro"}';
+
+let userObj = JSON.parse(userStr);
+
+console.log(userObj);
+ 
+  
+
+
+
+if(sessionStorage.getItem("pokoj") === null){
+    console.log("Item does not exist in localstoarge");
+}else{
+   console.log("Item exists in localstorage");
+   var ukaz = document.getElementById("star_obyvak");
+   ukaz.style.display = "none";
+}

@@ -1,8 +1,13 @@
 console.log("moc nečum");
 console.log(sessionStorage)
 
-
-
+if(sessionStorage.getItem("pokoj") === null){
+    console.log("Item does not exist in localstoarge");
+}else{
+   console.log("Item exists in localstorage");
+   var ukaz = document.getElementById("star_obyvak");
+   ukaz.style.display = "none";
+}
 
 //Modaly apky
 
@@ -32,10 +37,6 @@ window.onclick = function(event) {
       modalHintLoz.style.display = "none";
     }
 }
-
-
-
-
 
 
 
@@ -126,7 +127,6 @@ window.onclick = function(event) {
 document.getElementById("pokus").innerHTML = window.sessionStorage.getItem("mistnost");
 
 
-var myArray = [sessionStorage];
 
 /*
 
@@ -144,3 +144,4 @@ var myArray = [sessionStorage];
    })
 
    */
+
