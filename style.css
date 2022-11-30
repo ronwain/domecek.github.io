@@ -406,13 +406,30 @@ cursor: pointer;
         width: 32px;
         height: 32px;
       }
-       }
+      .home--star{
+        width: 20vw;
+      }
+  
+      .star--place {
+        flex-direction: row;
+        width: 100%;
+      }
+      .place--img {
+        flex: 1;
+        
+      }
+      .place--text {
+        flex: 2;
+        
+      }
+      }
+       
 
        @media (min-width: 992px) and (max-width: 1200px)
        {
         h2, p  {
           font-size: 16px;
-          color: rgb(43, 43, 226);
+          color: rgb(136, 136, 230);
            }
         .modal-content{
           margin-top: 20%;
@@ -422,8 +439,25 @@ cursor: pointer;
           width: 32px;
           height: 32px;
         }
+        .home--star{
+          width: 20vw;
+        }
+    
+        .star--place {
+          flex-direction: row;
+          width: 100%;
+        }
+        .place--img {
+          flex: 1;
+          
+        }
+        .place--text {
+          flex: 2;
+          
+        }
+        }
 
-       }
+       
        @media (min-width: 1201px) and (max-width: 1400px)
        {
         h2, p {
