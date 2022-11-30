@@ -128,23 +128,7 @@ window.onclick = function(event) {
 }
 
 
-// Hromada
-var ebModal6 = document.getElementById('okoli--modal_hromada');
-var ebBtn6 = document.getElementById("okoli--link_hromada");
-var ebSpan6 = document.getElementsByClassName("okoli--modal_hromada")[0];
 
-
-ebBtn6.onclick = function() {
-    ebModal6.style.display = "block";
-}
-ebSpan6.onclick = function() {
-    ebModal6.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == ebModal5) {
-        ebModal6.style.display = "none";
-    }
-}
 
 
 // Komin
@@ -176,7 +160,7 @@ function clickME(event) {
 
   console.log(clicks)
 
-  if(clicks == 7) {
+  if(clicks == 6) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('koupelna-hint').style.display = 'none';

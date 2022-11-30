@@ -1,7 +1,7 @@
 console.log("moc nečum");
 console.log(sessionStorage)
 
-if(sessionStorage.getItem("pokoj") === null){
+if(sessionStorage.getItem("obyvak") === null){
     console.log("Item does not exist in localstoarge");
 }else{
    console.log("Item exists in localstorage");

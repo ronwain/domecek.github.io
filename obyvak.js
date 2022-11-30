@@ -150,7 +150,7 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('obyvak-hint').style.display = 'none';
-   sessionStorage.setItem('pokoj', "obývák")
+   sessionStorage.setItem('obyvak', "pokoj")
    console.log(sessionStorage)
 
 } else {
@@ -167,20 +167,3 @@ document.querySelectorAll(`a`) // select all buttons
 
   
   
-  let userStr = '{"name":"Sammy","email":"sammy@example.com","plan":"Pro"}';
-
-let userObj = JSON.parse(userStr);
-
-console.log(userObj);
- 
-  
-
-
-
-if(sessionStorage.getItem("pokoj") === null){
-    console.log("Item does not exist in localstoarge");
-}else{
-   console.log("Item exists in localstorage");
-   var ukaz = document.getElementById("star_obyvak");
-   ukaz.style.display = "none";
-}
