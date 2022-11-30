@@ -1,15 +1,15 @@
-console.log("okoli")
+console.log("loznice")
 
 //Modaly apky
 
 // HINT button 
-var modalHintLoz = document.getElementById('okoli-hint-modal');
+var modalHintLoz = document.getElementById('lo-hint-modal');
 
 // Get the button that opens the modal
-var btnHintLoz = document.getElementById("okoli-hint");
+var btnHintLoz = document.getElementById("lo-hint");
 
 // Get the <span> element that closes the modal
-var spanHintLoz = document.getElementsByClassName("okoli--hint")[0];
+var spanHintLoz = document.getElementsByClassName("lo--hint")[0];
 
 // When the user clicks the button, open the modal 
 btnHintLoz.onclick = function() {
@@ -35,11 +35,11 @@ window.onclick = function(event) {
 
 
 
-//Modaly okoli
-// Hluk
-var ebModal1 = document.getElementById('okoli--modal_hluk');
-var ebBtn1 = document.getElementById("okoli--link_hluk");
-var ebSpan1 = document.getElementsByClassName("okoli--modal_hluk")[0];
+//Modaly Kuchyně
+// Moly
+var ebModal1 = document.getElementById('lo--modal_kytky');
+var ebBtn1 = document.getElementById("lo--link_kytky");
+var ebSpan1 = document.getElementsByClassName("lo--modal_kytky")[0];
 
 ebBtn1.onclick = function() {
     ebModal1.style.display = "block";
@@ -53,10 +53,10 @@ window.onclick = function(event) {
     }
 }
 
-// Křeslo
-var ebModal2 = document.getElementById('okoli--modal_kreslo');
-var ebBtn2 = document.getElementById("okoli--link_kreslo");
-var ebSpan2 = document.getElementsByClassName("okoli--modal_kreslo")[0];
+// Roztoci
+var ebModal2 = document.getElementById('lo--modal_roztoci');
+var ebBtn2 = document.getElementById("lo--link_roztoci");
+var ebSpan2 = document.getElementsByClassName("lo--modal_roztoci")[0];
 
 
 ebBtn2.onclick = function() {
@@ -71,10 +71,10 @@ window.onclick = function(event) {
     }
 }
 
-// Odpad
-var ebModal3 = document.getElementById('okoli--modal_odpad');
-var ebBtn3 = document.getElementById("okoli--link_odpad");
-var ebSpan3 = document.getElementsByClassName("okoli--modal_odpad")[0];
+// Štnice
+var ebModal3 = document.getElementById('lo--modal_stenice');
+var ebBtn3 = document.getElementById("lo--link_stenice");
+var ebSpan3 = document.getElementsByClassName("lo--modal_stenice")[0];
 
 
 ebBtn3.onclick = function() {
@@ -90,10 +90,10 @@ window.onclick = function(event) {
 }
 
 
-// Pumpa
-var ebModal4 = document.getElementById('okoli--modal_pumpa');
-var ebBtn4 = document.getElementById("okoli--link_pumpa");
-var ebSpan4 = document.getElementsByClassName("okoli--modal_pumpa")[0];
+//Člověk - sluchátka
+var ebModal4 = document.getElementById('lo--modal_clovek');
+var ebBtn4 = document.getElementById("lo--link_clovek");
+var ebSpan4 = document.getElementsByClassName("lo--modal_clovek")[0];
 
 
 ebBtn4.onclick = function() {
@@ -109,10 +109,10 @@ window.onclick = function(event) {
 }
 
 
-// Pes
-var ebModal5 = document.getElementById('okoli--modal_pes');
-var ebBtn5 = document.getElementById("okoli--link_pes");
-var ebSpan5 = document.getElementsByClassName("okoli--modal_pes")[0];
+// Pkočka
+var ebModal5 = document.getElementById('lo--modal_kocka');
+var ebBtn5 = document.getElementById("lo--link_kocka");
+var ebSpan5 = document.getElementsByClassName("lo--modal_kocka")[0];
 
 
 ebBtn5.onclick = function() {
@@ -127,14 +127,28 @@ window.onclick = function(event) {
     }
 }
 
+// Schody
+var ebModal6 = document.getElementById('lo--modal_schody');
+var ebBtn6 = document.getElementById("lo--link_schody");
+var ebSpan6 = document.getElementsByClassName("lo--modal_schody")[0];
 
 
+ebBtn6.onclick = function() {
+    ebModal6.style.display = "block";
+}
+ebSpan6.onclick = function() {
+    ebModal6.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == ebModal6) {
+        ebModal6.style.display = "none";
+    }
+}
 
-
-// Komin
-var ebModal7 = document.getElementById('okoli--modal_komin');
-var ebBtn7 = document.getElementById("okoli--link_komin");
-var ebSpan7 = document.getElementsByClassName("okoli--modal_komin")[0];
+// PC
+var ebModal7 = document.getElementById('lo--modal_pc');
+var ebBtn7 = document.getElementById("lo--link_pc");
+var ebSpan7 = document.getElementsByClassName("lo--modal_pc")[0];
 
 
 ebBtn7.onclick = function() {
@@ -160,10 +174,10 @@ function clickME(event) {
 
   console.log(clicks)
 
-  if(clicks == 6) {
+  if(clicks == 7) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
-   document.getElementById('okoli-hint').style.display = 'none';
+   document.getElementById('lo-hint').style.display = 'none';
    localStorage.setItem("mistnost", "loznice")
 
 } else {
