@@ -13,6 +13,7 @@ body, html {
   color: white;
   margin: 0%;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 a {
@@ -111,7 +112,7 @@ a {
   background-size: cover;
   background-position: center;
   color: #000000;
-  animation: heartbeat 3s linear infinite;
+  animation: heartbeat ;
   margin: 3%;
   display: flex;
   flex-direction: row;
@@ -124,12 +125,21 @@ a {
 }
 
 @keyframes heartbeat {
-
+  0% {
+    transform: rotate(0deg)
+  }
+  25% {
+    transform: rotate(-30deg)
+  }
  
+  75% {
+    transform: rotate(30deg)
+  }
   100% {
-    transform: rotate(1turn);
+    transform: rotate(0deg)
   }
-  }
+}
+  
 
 .cliks {
   z-index: 10001;
@@ -390,7 +400,7 @@ cursor: pointer;
     @media (min-width: 768px) and (max-width: 992px)
     {
        h2, p {
-      font-size: 16px;
+      font-size: 18px;
       color: rgb(228, 243, 113);
        }
        .button--style{
@@ -422,18 +432,28 @@ cursor: pointer;
         flex: 2;
         
       }
+      
+
+}
+.star--counter {
+    font-size: 12px;
       }
        
 
        @media (min-width: 992px) and (max-width: 1200px)
        {
-        h2, p  {
-          font-size: 16px;
+        p,  button {
+          font-size: 20px;
           color: rgb(136, 136, 230);
            }
-        .modal-content{
-          margin-top: 20%;
-        }
+
+           h2, h3 {
+            font-size: 28px;
+            color: rgb(247, 240, 233)
+    
+             }
+
+       
 
         .modal-star, .popisek--star {
           width: 32px;
@@ -455,15 +475,24 @@ cursor: pointer;
           flex: 2;
           
         }
+        .modal-content {
+
+          margin-top: 10%;
+      }
         }
 
        
        @media (min-width: 1201px) and (max-width: 1400px)
        {
-        h2, p {
-          font-size: 16px;
-          color: rgb(150, 231, 165);
+        p,  button {
+          font-size: 24px;
+          color: rgb(249, 250, 249);
            }
+           h2, h3 {
+            font-size: 32px;
+            color: rgb(247, 240, 233)
+    
+             }
 
         .modal-star, .popisek--star {
           width: 56px;
@@ -478,13 +507,13 @@ cursor: pointer;
 
        @media (min-width: 1400px) 
        {
-         p {
-          font-size: 22px;
+         p,  button {
+          font-size: 24px;
           color: rgb(226, 134, 43);
            }
 
            h2, h3 {
-            font-size: 24px;
+            font-size: 32px;
             color: rgb(226, 134, 43)
     
              }
@@ -499,5 +528,5 @@ cursor: pointer;
        }
 
        #star_obyvak {
-        filter: invert(100%) 
+        filter: invert(80%) 
        }
