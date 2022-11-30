@@ -46,39 +46,6 @@ a {
 
 
 
-.pulse {
-  
-  background-color: #58ea00;
-  
-
-  text-align: center;
-  line-height: 100px;
-  
-  position: relative;
-}
-
-
-.pulse:before, .pulse:after {
-  content: '';
-  position: absolute;
-  left: -20px;
-  right: -20px;
-  top: -20px;
-  bottom: -20px;
-  border: 1px solid #58ea00;
-  
-  animation: pulse 1.5s linear infinite;
-}
-
-.pulse:after {
-  animation-delay: 0.5s;
-}
-
-@keyframes pulse {
-  0% { transform: scale(0.5); opacity: 0 }
-  50% { transform: scale(1); opacity: 1 }
-  100% { transform: scale(1.2); opacity: 0 }
-}
 
 
 
@@ -160,7 +127,7 @@ a {
 
  
   100% {
-    transform: rotate(-1turn);
+    transform: rotate(1turn);
   }
   }
 
@@ -199,6 +166,8 @@ h2, p {
 .star--place { 
   display: flex;
 }
+
+
  img  {
   height: 7vh;
   width: 7vw;
@@ -207,6 +176,27 @@ h2, p {
   animation-iteration-count: 1;
   animation-duration: 4s;
  }
+#star_pokoj {
+  animation: heartbeat ;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+#star_okoli {
+  animation: heartbeat ;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 4s;
+}
+
+#star_dilna {
+  animation: heartbeat ;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
 
 /*modaly*/
 
@@ -475,5 +465,5 @@ cursor: pointer;
        }
 
        #star_obyvak {
-        background-color: #58ea00;
+        filter: invert(100%) 
        }
