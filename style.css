@@ -391,7 +391,7 @@ cursor: pointer;
     {
        h2, p {
       font-size: 16px;
-      color: blueviolet;
+      color: rgb(228, 243, 113);
        }
        .button--style{
          font-size: 16px;
@@ -462,7 +462,7 @@ cursor: pointer;
        {
         h2, p {
           font-size: 16px;
-          color: rgb(220, 43, 226);
+          color: rgb(150, 231, 165);
            }
 
         .modal-star, .popisek--star {
