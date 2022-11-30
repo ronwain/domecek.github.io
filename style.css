@@ -81,6 +81,7 @@ a {
 }
 
 
+
 .otoc {
   color:#000
 }
@@ -151,26 +152,15 @@ a {
   justify-content: center;
   align-items: center;
   aspect-ratio: 1 / 1;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
 }
 
 @keyframes heartbeat {
-  0% {
-    transform:  scale(1);
-  }
-  25% {
-    transform:  scale(1);
-  }
-  30% {
-    transform:  scale(1.4);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  70% {
-    transform:  scale(1.4);
-  }
+
+ 
   100% {
-    transform:  scale(1);
+    transform: rotate(-1turn);
   }
   }
 
@@ -186,13 +176,13 @@ a {
 
 /*home*/
 .home--star {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   height: 100vh;
   width: 15vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 8px;
   color: #fff;
@@ -206,15 +196,16 @@ h2, p {
   max-width: 100%;
 }
 
-.star--place {
-  height: 10vh;
-  width: 10vw;
+.star--place { 
+  display: flex;
 }
  img  {
-  height: 5vh;
-  width: 5vw;
+  height: 7vh;
+  width: 7vw;
   color: #000000;
-  animation: heartbeat 5s linear infinite;
+  animation: heartbeat ;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
  }
 
 /*modaly*/
@@ -312,6 +303,7 @@ cursor: pointer;
   align-items: center;
   justify-content: space-around;
   height: calc(100%/8);
+  
 }
 
 .star--counter {
@@ -324,6 +316,9 @@ cursor: pointer;
   color: #000;
   z-index: 1000;
 }
+
+
+
 
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation:portrait) {
@@ -352,6 +347,23 @@ cursor: pointer;
     width: 32px;
     height: 32px;
   }
+
+  .home--star{
+    width: 20vw;
+  }
+
+  .star--place {
+    flex-direction: row;
+    width: 100%;
+  }
+  .place--img {
+    flex: 1;
+    
+  }
+  .place--text {
+    flex: 2;
+    
+  }
    }
   @media (min-width: 576px) and (max-width: 768px)
  {
@@ -366,6 +378,22 @@ cursor: pointer;
     .modal-star, .popisek--star {
       width: 32px;
       height: 32px;
+    }
+    .home--star{
+      width: 20vw;
+    }
+
+    .star--place {
+      flex-direction: row;
+      width: 100%;
+    }
+    .place--img {
+      flex: 1;
+      
+    }
+    .place--text {
+      flex: 2;
+      
     }
     }
 
