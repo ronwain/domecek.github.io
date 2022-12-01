@@ -9,7 +9,7 @@ if(sessionStorage.getItem("obyvak") === null){
 */
 
 // Kontrola localStorage -> projetí všech místností podle toho přirazení class
-// pole 
+// pole: https://codepen.io/Matty06/pen/bGKxNqX?editors=1111 s tím dál pracovat pomocí metod .map .forEach a podle toho přiřazovat classy 
 
 
 //Modaly apky   
