@@ -24,14 +24,15 @@
 
 
 /* close button */
+/* Duplicitní kód ve více css souborech stačí dát jednou do style.css (pokud se style načítá na všech stránkách) */
 .hint-close
 {
-  color: #ffffff;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   text-transform: uppercase;
   margin: 20%;
 }

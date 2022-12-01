@@ -161,7 +161,19 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('koupelna-hint').style.display = 'none';
-   localStorage.setItem("mistnost", "loznice")
+   
+    // Get the existing data
+    var existing = localStorage.getItem('mistnost');
+    
+    // If no existing data, create an array
+    // Otherwise, convert the localStorage string to an array
+    existing = existing ? existing.split(',') : [];
+    
+    // Add new data to localStorage Array
+    existing.push('koupelna');
+    
+    // Save back to localStorage
+    localStorage.setItem('mistnost', existing.toString());
 
 } else {
    document.getElementById('gohome').style.display = 'none';

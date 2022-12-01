@@ -10,7 +10,7 @@ body, html {
 
 * {
   box-sizing: border-box;
-  color: white;
+  color: #fff;
   margin: 0%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -26,8 +26,9 @@ button {
 }
 
 .button--style{
-  background-color: white;
-  color: black;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
   text-transform: uppercase;
   padding: 1%;
   margin: 1%;
@@ -41,7 +42,7 @@ button {
 }
 
 a {
-  color: black;
+  color: #000;
   text-transform: uppercase;  
 }
 
@@ -111,7 +112,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: #000000;
+  color: #000;
   animation: heartbeat ;
   margin: 3%;
   display: flex;
@@ -181,7 +182,7 @@ h2, p {
  img  {
   height: 7vh;
   width: 7vw;
-  color: #000000;
+  color: #000;
   animation: heartbeat ;
   animation-iteration-count: 1;
   animation-duration: 4s;
@@ -227,16 +228,18 @@ h2, p {
 
 
 /* close button */
+
+/* close button */
 .hint-close, 
 
 .close_kocka, 
 .close_postel {
-  color: #ffffff;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -255,19 +258,17 @@ cursor: pointer;
  
 .loznice--modal, 
 .loznice--modal_postel {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  display: none; 
+  position: fixed; 
    /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8); 
   z-index: 1001;
-
- 
 }
 
 
@@ -292,6 +293,7 @@ cursor: pointer;
   z-index: 1001;
 }
 
+/* selector img-kocka a background je domecek? nedává smysl */
 #img-kocka {
   background-image: url(img/domecek.png);
 }

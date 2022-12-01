@@ -164,7 +164,7 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('okoli-hint').style.display = 'none';
-   localStorage.setItem("mistnost", "loznice")
+   localStorage.setItem("mistnost", "okoli")
 
 } else {
    document.getElementById('gohome').style.display = 'none';
