@@ -1,6 +1,4 @@
-console.log("moc nečum");
-console.log(sessionStorage)
-
+/*
 if(sessionStorage.getItem("obyvak") === null){
     console.log("Item does not exist in localstoarge");
 }else{
@@ -10,22 +8,19 @@ if(sessionStorage.getItem("obyvak") === null){
    ukaz.classList.add("svit");
    ukaz.classList.remove("nesvit")
 }
+*/
 
-//Modaly apky
+// Kontrola localStorage -> projetí všech místností podle toho přirazení class
+// pole: https://codepen.io/Matty06/pen/bGKxNqX?editors=1111 s tím dál pracovat pomocí metod .map .forEach a podle toho přiřazovat classy 
+
+
+//Modaly apky   
 
 // HINT button 
 var modalHintLoz = document.getElementById('loznice-hint-modal');
 
-// Get the button that opens the modal
-var btnHintLoz = document.getElementById("loznice-hint");
-
 // Get the <span> element that closes the modal
 var spanHintLoz = document.getElementsByClassName("loznice--hint")[0];
-
-// When the user clicks the button, open the modal 
-btnHintLoz.onclick = function() {
-  modalHintLoz.style.display = "block";
-}
 
 // When the user clicks on <span> (x), close the modal
 spanHintLoz.onclick = function() {
@@ -39,58 +34,6 @@ window.onclick = function(event) {
       modalHintLoz.style.display = "none";
     }
 }
-
-
-
-//Modaly Ložnice
-// Kočka 
-var ebModal = document.getElementById('loznice--modal_kocka');
-var ebBtn = document.getElementById("loznice--link_kocka");
-var ebSpan = document.getElementsByClassName("loznice--modal")[0];
-
-
-ebBtn.onclick = function() {
-    ebModal.style.display = "block";
-}
-
-ebSpan.onclick = function() {
-    ebModal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == ebModal) {
-        ebModal.style.display = "none";
-    }
-}
-
-
-// Postel 
-var ebModal1 = document.getElementById('loznice--modal_postel');
-
-// Get the button that opens the modal
-var ebBtn1 = document.getElementById("loznice--link_postel");
-
-// Get the <span> element that closes the modal
-var ebSpan1 = document.getElementsByClassName("loznice--modal_postel")[0];
-
-// When the user clicks the button, open the modal 
-ebBtn1.onclick = function() {
-    ebModal1.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-ebSpan1.onclick = function() {
-    ebModal1.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == ebModal1) {
-        ebModal1.style.display = "none";
-    }
-}
-
-
 
 
 /*počítání*/
@@ -108,8 +51,7 @@ window.onclick = function(event) {
     document.getElementById('gohome').style.display = 'block'; 
     document.getElementById('zmiz').style.display = 'none';
     document.getElementById('loznice-hint').style.display = 'none';
-    sessionStorage.setItem("mistnost", "loznice")
-    console.log(sessionStorage)
+    localStorage.setItem("mistnost", "loznice")
 
 } else {
     document.getElementById('gohome').style.display = 'none';
@@ -126,7 +68,7 @@ window.onclick = function(event) {
   
    
 // Retrieve vlož věci ze storage
-document.getElementById("pokus").innerHTML = window.sessionStorage.getItem("mistnost");
+document.getElementById("pokus").innerHTML = localStorage.getItem("mistnost");
 
 
 

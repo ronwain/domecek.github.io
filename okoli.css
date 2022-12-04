@@ -23,6 +23,7 @@
 
 
 /* close button */
+/* Duplicitní kód ve více css souborech stačí dát jednou do style.css (pokud se style načítá na všech stránkách) */
 .hint-close
 {
   color: #ffffff;
