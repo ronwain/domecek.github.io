@@ -1,15 +1,15 @@
-console.log("kuchyne")
+console.log("puda")
 
 //Modaly apky
 
 // HINT button 
-var modalHintLoz = document.getElementById('ku-hint-modal');
+var modalHintLoz = document.getElementById('pu-hint-modal');
 
 // Get the button that opens the modal
-var btnHintLoz = document.getElementById("ku-hint");
+var btnHintLoz = document.getElementById("pu-hint");
 
 // Get the <span> element that closes the modal
-var spanHintLoz = document.getElementsByClassName("ku--hint")[0];
+var spanHintLoz = document.getElementsByClassName("pu--hint")[0];
 
 // When the user clicks the button, open the modal 
 btnHintLoz.onclick = function() {
@@ -35,11 +35,11 @@ window.onclick = function(event) {
 
 
 
-//Modaly Kuchyně
-// Moly
-var ebModal1 = document.getElementById('ku--modal_moly');
-var ebBtn1 = document.getElementById("ku--link_moly");
-var ebSpan1 = document.getElementsByClassName("ku--modal_moly")[0];
+//Modaly půda
+// Mys
+var ebModal1 = document.getElementById('pu--modal_mys');
+var ebBtn1 = document.getElementById("pu--link_mys");
+var ebSpan1 = document.getElementsByClassName("pu--modal_mys")[0];
 
 ebBtn1.onclick = function() {
     ebModal1.style.display = "block";
@@ -53,10 +53,10 @@ window.onclick = function(event) {
     }
 }
 
-// Kos
-var ebModal2 = document.getElementById('ku--modal_kos');
-var ebBtn2 = document.getElementById("ku--link_kos");
-var ebSpan2 = document.getElementsByClassName("ku--modal_kos")[0];
+// holub
+var ebModal2 = document.getElementById('pu--modal_holub');
+var ebBtn2 = document.getElementById("pu--link_holub");
+var ebSpan2 = document.getElementsByClassName("pu--modal_holub")[0];
 
 
 ebBtn2.onclick = function() {
@@ -72,9 +72,9 @@ window.onclick = function(event) {
 }
 
 // Odpad
-var ebModal3 = document.getElementById('ku--modal_konvice');
-var ebBtn3 = document.getElementById("ku--link_konvice");
-var ebSpan3 = document.getElementsByClassName("ku--modal_konvice")[0];
+var ebModal3 = document.getElementById('pu--modal_bordel');
+var ebBtn3 = document.getElementById("pu--link_bordel");
+var ebSpan3 = document.getElementsByClassName("pu--modal_bordel")[0];
 
 
 ebBtn3.onclick = function() {
@@ -90,10 +90,10 @@ window.onclick = function(event) {
 }
 
 
-// Pára bez digestoře
-var ebModal4 = document.getElementById('ku--modal_para');
-var ebBtn4 = document.getElementById("ku--link_para");
-var ebSpan4 = document.getElementsByClassName("ku--modal_para")[0];
+// díra
+var ebModal4 = document.getElementById('pu--modal_dira');
+var ebBtn4 = document.getElementById("pu--link_dira");
+var ebSpan4 = document.getElementsByClassName("pu--modal_dira")[0];
 
 
 ebBtn4.onclick = function() {
@@ -109,43 +109,6 @@ window.onclick = function(event) {
 }
 
 
-// Plynový sporák
-var ebModal5 = document.getElementById('ku--modal_plyn');
-var ebBtn5 = document.getElementById("ku--link_plyn");
-var ebSpan5 = document.getElementsByClassName("ku--modal_plyn")[0];
-
-
-ebBtn5.onclick = function() {
-    ebModal5.style.display = "block";
-}
-ebSpan5.onclick = function() {
-    ebModal5.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == ebModal5) {
-        ebModal5.style.display = "none";
-    }
-}
-
-
-// Máma
-var ebModal7 = document.getElementById('ku--modal_mama');
-var ebBtn7 = document.getElementById("ku--link_mama");
-var ebSpan7 = document.getElementsByClassName("ku--modal_mama")[0];
-
-
-ebBtn7.onclick = function() {
-    ebModal7.style.display = "block";
-}
-ebSpan7.onclick = function() {
-    ebModal7.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == ebModal5) {
-        ebModal7.style.display = "none";
-    }
-}
-
 /*počítání*/
 
 
@@ -157,11 +120,11 @@ function clickME(event) {
 
   console.log(clicks)
 
-  if(clicks == 5) {
+  if(clicks == 4) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
-   document.getElementById('ku-hint').style.display = 'none';
-   localStorage.setItem("mistnost", "kuchyne")
+   document.getElementById('pu-hint').style.display = 'none';
+   sesionStorage.setItem("mistnost", "puda")
 
 } else {
    document.getElementById('gohome').style.display = 'none';

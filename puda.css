@@ -1,4 +1,4 @@
-#okoli--svg{
+#puda--svg{
     min-width: 100vw;
     min-height: 90vh;
     max-width: 177.7777vh;
@@ -14,7 +14,7 @@
     transform: translate(-50%, 0%);
   }
 
-  .okoli--svg {
+  .puda--svg {
     height: 100vh;
 }
 
@@ -35,12 +35,10 @@
   margin: 20%;
 }
 
-.close_moly
-.close_kos
-.close_konvice
-.close_para
-.close_plyn
-.close_mama
+.close_mys
+.close_holub
+.close_bordel
+.close_dira
 {
 display: none;
 }
@@ -52,13 +50,11 @@ text-decoration: none;
 cursor: pointer;
 }
 
-.ku--hint, 
-.ku--modal_moly,
-.ku--modal_kos,
-.ku--modal_konvice,
-.ku--modal_para,
-.ku--modal_plyn,
-.ku--modal_mama
+.pu--hint, 
+.pu--modal_mys,
+.pu--modal_holub,
+.pu--modal_bordel,
+.pu--modal_dira
 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -77,11 +73,11 @@ cursor: pointer;
 /* modal - obrázky*/
 
 
-#img-moly {
+#img-mys {
   background-image: url(img/kocka.svg);
 }
 
-#img-konvice {
+#img-bordel {
   background-image: url(img/kocka.svg);
 }
 
