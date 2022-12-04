@@ -6,7 +6,9 @@ if(sessionStorage.getItem("obyvak") === null){
 }else{
    console.log("Item exists in localstorage");
    var ukaz = document.getElementById("star_obyvak");
-   ukaz.style.display = "none";
+  
+   ukaz.classList.add("svit");
+   ukaz.classList.remove("nesvit")
 }
 
 //Modaly apky

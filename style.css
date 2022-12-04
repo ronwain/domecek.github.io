@@ -395,6 +395,11 @@ cursor: pointer;
       flex: 2;
       
     }
+
+    figcaption {
+      text-align: left;
+    }
+   
     }
 
     @media (min-width: 768px) and (max-width: 992px)
@@ -432,6 +437,11 @@ cursor: pointer;
         flex: 2;
         
       }
+
+      figcaption,h2 {
+        text-align:  left;
+      }
+     
       
 
 }
@@ -481,7 +491,7 @@ cursor: pointer;
       }
         }
 
-       
+      
        @media (min-width: 1201px) and (max-width: 1400px)
        {
         p,  button {
@@ -527,6 +537,11 @@ cursor: pointer;
       }
        }
 
-       #star_obyvak {
+     
+      
+       .nesvit {
         filter: invert(80%) 
        }
+      .svit {
+       filter: invert(0%) 
+      }
