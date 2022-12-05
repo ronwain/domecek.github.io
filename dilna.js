@@ -1,15 +1,15 @@
-console.log("kuchyne")
+console.log("dilna")
 
 //Modaly apky
 
 // HINT button 
-var modalHintLoz = document.getElementById('ku-hint-modal');
+var modalHintLoz = document.getElementById('di-hint-modal');
 
 // Get the button that opens the modal
-var btnHintLoz = document.getElementById("ku-hint");
+var btnHintLoz = document.getElementById("di-hint");
 
 // Get the <span> element that closes the modal
-var spanHintLoz = document.getElementsByClassName("ku--hint")[0];
+var spanHintLoz = document.getElementsByClassName("di--hint")[0];
 
 // When the user clicks the button, open the modal 
 btnHintLoz.onclick = function() {
@@ -35,11 +35,11 @@ window.onclick = function(event) {
 
 
 
-//Modaly Kuchyně
-// Moly
-var ebModal1 = document.getElementById('ku--modal_moly');
-var ebBtn1 = document.getElementById("ku--link_moly");
-var ebSpan1 = document.getElementsByClassName("ku--modal_moly")[0];
+//Modaly Dílna
+// Roura
+var ebModal1 = document.getElementById('di--modal_roura');
+var ebBtn1 = document.getElementById("di--link_roura");
+var ebSpan1 = document.getElementsByClassName("di--modal_roura")[0];
 
 ebBtn1.onclick = function() {
     ebModal1.style.display = "block";
@@ -53,10 +53,11 @@ window.onclick = function(event) {
     }
 }
 
-// Kos
-var ebModal2 = document.getElementById('ku--modal_kos');
-var ebBtn2 = document.getElementById("ku--link_kos");
-var ebSpan2 = document.getElementsByClassName("ku--modal_kos")[0];
+
+// Výpary
+var ebModal2 = document.getElementById('di--modal_vypary');
+var ebBtn2 = document.getElementById("di--link_vypary");
+var ebSpan2 = document.getElementsByClassName("di--modal_vypary")[0];
 
 
 ebBtn2.onclick = function() {
@@ -71,10 +72,10 @@ window.onclick = function(event) {
     }
 }
 
-// Odpad
-var ebModal3 = document.getElementById('ku--modal_konvice');
-var ebBtn3 = document.getElementById("ku--link_konvice");
-var ebSpan3 = document.getElementsByClassName("ku--modal_konvice")[0];
+// Spalování
+var ebModal3 = document.getElementById('di--modal_pan');
+var ebBtn3 = document.getElementById("di--link_pan");
+var ebSpan3 = document.getElementsByClassName("di--modal_pan")[0];
 
 
 ebBtn3.onclick = function() {
@@ -90,10 +91,10 @@ window.onclick = function(event) {
 }
 
 
-// Pára bez digestoře
-var ebModal4 = document.getElementById('ku--modal_para');
-var ebBtn4 = document.getElementById("ku--link_para");
-var ebSpan4 = document.getElementsByClassName("ku--modal_para")[0];
+// Bojler
+var ebModal4 = document.getElementById('di--modal_bojler');
+var ebBtn4 = document.getElementById("di--link_bojler");
+var ebSpan4 = document.getElementsByClassName("di--modal_bojler")[0];
 
 
 ebBtn4.onclick = function() {
@@ -109,10 +110,10 @@ window.onclick = function(event) {
 }
 
 
-// Plynový sporák
-var ebModal5 = document.getElementById('ku--modal_plyn');
-var ebBtn5 = document.getElementById("ku--link_plyn");
-var ebSpan5 = document.getElementsByClassName("ku--modal_plyn")[0];
+// Cigareta
+var ebModal5 = document.getElementById('di--modal_cigareta');
+var ebBtn5 = document.getElementById("di--link_cigareta");
+var ebSpan5 = document.getElementsByClassName("di--modal_cigareta")[0];
 
 
 ebBtn5.onclick = function() {
@@ -128,24 +129,6 @@ window.onclick = function(event) {
 }
 
 
-// Máma
-var ebModal7 = document.getElementById('ku--modal_mama');
-var ebBtn7 = document.getElementById("ku--link_mama");
-var ebSpan7 = document.getElementsByClassName("ku--modal_mama")[0];
-
-
-ebBtn7.onclick = function() {
-    ebModal7.style.display = "block";
-}
-ebSpan7.onclick = function() {
-    ebModal7.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == ebModal5) {
-        ebModal7.style.display = "none";
-    }
-}
-
 /*počítání*/
 
 
@@ -160,7 +143,7 @@ function clickME(event) {
   if(clicks == 5) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
-   document.getElementById('ku-hint').style.display = 'none';
+   document.getElementById('di-hint').style.display = 'none';
    // získání aktuálního stavu localStorage a nahrání nové místnosti
    
 // Get the existing data
@@ -171,7 +154,7 @@ var existing = sessionStorage.getItem('mistnost');
     existing = existing ? existing.split(',') : [];
     
     // Add new data to localStorage Array
-    existing.push('kuchyne');
+    existing.push('dilna');
     
     // Save back to localStorage
     sessionStorage.setItem('mistnost', existing.toString());
