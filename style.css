@@ -101,7 +101,7 @@ a {
   color: #fff;
   background-color: #020811a1;
   z-index: 10000;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   padding: 1%;
@@ -288,7 +288,6 @@ cursor: pointer;
   width: 120px;
   height: 120px;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   z-index: 1001;
 }
@@ -515,6 +514,10 @@ cursor: pointer;
 
           margin-top: 10%;
       }
+      .modal-img {
+        width: 200px;
+        height: 200px;
+        }
        }
 
        @media (min-width: 1400px) 
@@ -533,10 +536,16 @@ cursor: pointer;
         .modal-star, .popisek--star {
           width: 64px;
           height: 64px;
+          margin-bottom: 3%;
         }
         .modal-content {
           margin-top: 15%;
       }
+
+      .modal-img {
+        width: 240px;
+        height: 240px;
+        }
        }
 
      

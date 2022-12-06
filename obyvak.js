@@ -146,12 +146,16 @@ function clickME(event) {
 
   console.log(clicks)
 
-  if(clicks == 2) {
+  if(clicks == 5) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('obyvak-hint').style.display = 'none';
-   sessionStorage.setItem('obyvak', "pokoj")
-   console.log(sessionStorage)
+  
+   
+   var existing = sessionStorage.getItem('mistnost');
+   existing = existing ? existing.split(',') : [];
+   existing.push('obyvak');
+   sessionStorage.setItem('mistnost', existing.toString());
 
 } else {
    document.getElementById('gohome').style.display = 'none';

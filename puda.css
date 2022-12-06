@@ -74,17 +74,17 @@ cursor: pointer;
 
 
 #img-mys {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/mys.svg);
 }
 
 #img-bordel {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/neporadek.svg);
 }
 
-#img-prasky {
-  background-image: url(img/kocka.svg);
+#img-holub {
+  background-image: url(img/hrozby/holub.svg);
 }
 
 #img-okno {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/stavebni_zavady.svg);
 }

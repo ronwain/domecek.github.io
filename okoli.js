@@ -164,12 +164,17 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('okoli-hint').style.display = 'none';
-   localStorage.setItem("mistnost", "okoli")
+   
+
+var existing = sessionStorage.getItem('mistnost');
+existing = existing ? existing.split(',') : [];
+existing.push('okoli');
+sessionStorage.setItem('mistnost', existing.toString());
+
 
 } else {
-   document.getElementById('gohome').style.display = 'none';
+document.getElementById('gohome').style.display = 'none';
 }
-
 
 }
 

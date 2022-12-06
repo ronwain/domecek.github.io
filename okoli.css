@@ -81,17 +81,26 @@ cursor: pointer;
 
 
 #img-hluk {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/krovinorez.svg);
 }
 
 #img-kreslo {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/kreslo.svg);
 }
 
-#img-prasky {
-  background-image: url(img/kocka.svg);
+
+#img-odpad {
+  background-image: url(img/hrozby/odpad.svg);
 }
 
-#img-okno {
-  background-image: url(img/kocka.svg);
+#img-pumpa {
+  background-image: url(img/hrozby/studna.svg);
+}
+
+#img-pes {
+  background-image: url(img/hrozby/pes.svg);
+}
+
+#img-komin {
+  background-image: url(img/hrozby/komin.svg);
 }

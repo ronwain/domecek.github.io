@@ -153,27 +153,19 @@ var clicks = 0
 function clickME(event) {
   clicks += 1
 
-  document.getElementById("clicks").innerText = clicks // innerText is more suitable in this case
+  document.getElementById("clicks").innerText = clicks 
 
-  console.log(clicks)
-
+//hvězda
   if(clicks == 6) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('koupelna-hint').style.display = 'none';
    
-    // Get the existing data
-    var existing = localStorage.getItem('mistnost');
-    
-    // If no existing data, create an array
-    // Otherwise, convert the localStorage string to an array
+ 
+    var existing = sessionStorage.getItem('mistnost');
     existing = existing ? existing.split(',') : [];
-    
-    // Add new data to localStorage Array
     existing.push('koupelna');
-    
-    // Save back to localStorage
-    localStorage.setItem('mistnost', existing.toString());
+    sessionStorage.setItem('mistnost', existing.toString());
 
 } else {
    document.getElementById('gohome').style.display = 'none';

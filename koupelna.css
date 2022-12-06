@@ -86,28 +86,28 @@ cursor: pointer;
 
 
 #img-karma {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/karma.svg);
 }
 
 
 #img-vana {
-    background-image: url(img/kocka.svg);
+    background-image: url(img/hrozby/fen.svg);
   }
 
   
 #img-plisen {
-    background-image: url(img/kocka.svg);
+    background-image: url(img/hrozby/koupelna_plisne.svg);
   }
 
 
   #img-chemikalie {
-    background-image: url(img/kocka.svg);
+    background-image: url(img/hrozby/cistici_prostredky.svg);
   }
 
   #img-podlaha {
-    background-image: url(img/kocka.svg);
+    background-image: url(img/hrozby/uklouznuti.svg);
   }
 
   #img-pradlo {
-    background-image: url(img/kocka.svg);
+    background-image: url(img/hrozby/pradlo.svg);
   }

@@ -80,18 +80,32 @@ cursor: pointer;
 /* modal - obrázky*/
 
 
-#img-moly {
-  background-image: url(img/kocka.svg);
+#img-kytky {
+  background-image: url(img/hrozby/kvetiny.svg);
 }
 
-#img-konvice {
-  background-image: url(img/kocka.svg);
+#img-roztoci {
+  background-image: url(img/hrozby/stenice.svg);
 }
 
-#img-prasky {
-  background-image: url(img/kocka.svg);
+#img-stenice {
+  background-image: url(img/hrozby/roztoci.svg);
 }
 
-#img-okno {
-  background-image: url(img/kocka.svg);
+#img-clovek {
+  background-image: url(img/hrozby/sluchatka.svg);
 }
+
+#img-kocka {
+  background-image: url(img/);
+}
+
+#img-pc {
+  background-image: url(img/hrozby/pocitac.svg);
+}
+
+#img-schody {
+  background-image: url(img/hrozby/schody.svg);
+}
+
+

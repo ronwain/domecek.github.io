@@ -75,18 +75,26 @@ cursor: pointer;
 
 
 /* modal - obrázky*/
-#img-moly {
-  background-image: url(img/kocka.svg);
+#img-lampa {
+  background-image: url(img/hrozby/);
+}
+
+#img-baterky {
+  background-image: url(img/hrozby/baterky.svg);
 }
 
 #img-pytlik {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/uduseni.svg);
 }
 
-#img-prasky {
-  background-image: url(img/kocka.svg);
+#img-plys {
+  background-image: url(img/hrozby/hracky.svg);
 }
 
-#img-okno {
-  background-image: url(img/kocka.svg);
+#img-skrin {
+  background-image: url(img/hrozby/skrin.svg);
+}
+
+#img-zasuvky {
+  background-image: url(img/hrozby/zasuvky.svg);
 }

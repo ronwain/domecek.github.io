@@ -76,17 +76,25 @@ cursor: pointer;
 
 /* modal - obrázky*/
 #img-moly {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/potraviny.svg);
 }
 
 #img-konvice {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/dite.svg);
 }
 
-#img-prasky {
-  background-image: url(img/kocka.svg);
+#img-kos {
+  background-image: url(img/hrozby/odpadky.svg);
 }
 
-#img-okno {
-  background-image: url(img/kocka.svg);
+#img-para {
+  background-image: url(img/hrozby/plisne.svg);
+}
+
+#img-plyn {
+  background-image: url(img/hrozby/sporak.svg);
+}
+
+#img-mama {
+  background-image: url(img/hrozby/rodic.svg);
 }

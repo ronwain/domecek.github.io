@@ -80,17 +80,22 @@ cursor: pointer;
 
 
 #img-svicky {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/svicky.svg);
 }
 
 #img-cigarety {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/cigarety.svg);
 }
 
 #img-prasky {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/leky.svg);
+}
+
+#img-teplota {
+  background-image: url(img/hrozby/topeni.svg);
 }
 
 #img-okno {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/okno.svg);
 }
+

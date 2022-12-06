@@ -75,17 +75,21 @@ cursor: pointer;
 
 /* modal - obrázky*/
 #img-roura {
-  background-image: url(img/kocka.svg);
+  background-image: url(img/hrozby/roura.svg);
 }
 
-#img-konvice {
-  background-image: url(img/kocka.svg);
+#img-vypary {
+  background-image: url(img/hrozby/plechovka.svg);
 }
 
-#img-prasky {
-  background-image: url(img/kocka.svg);
+#img-pan {
+  background-image: url(img/hrozby/nespalujeme_odpad.svg);
 }
 
-#img-okno {
-  background-image: url(img/kocka.svg);
+#img-bojler {
+  background-image: url(img/hrozby/bojler.svg);
+}
+
+#img-cigareta {
+  background-image: url(img/hrozby/cigareta_dilna.svg);
 }
