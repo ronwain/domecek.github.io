@@ -690,4 +690,6 @@ h2, p {
   background-color:#020811a1;
   z-index: 50000;
   position: relative;
+  height:100%;
+  width: 100%;
 }

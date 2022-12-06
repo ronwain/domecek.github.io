@@ -64,15 +64,12 @@ if(sessionStorage.getItem("koupelna") === null){
 
 
 
-if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda")) {
+if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda") && sessionStorage.getItem("loznice") && sessionStorage.getItem("obyvak") && sessionStorage.getItem("okoli") && sessionStorage.getItem("pokoj") && sessionStorage.getItem("kuchyne")  && sessionStorage.getItem("koupelna")) {
     console.log("prasarna");
-    
-var modalHintLoz = document.getElementById('obyvak-hint-modal');
-var firework = document.getElementById('fire');
-
-
-modalHintLoz.style.display = "block";
-firework.style.display = "block";
+    var modalHintLoz = document.getElementById('obyvak-hint-modal');
+    var firework = document.getElementById('fire');
+    modalHintLoz.style.display = "block";
+    firework.style.display = "block";
 
 
 } else {
@@ -84,9 +81,6 @@ firework.style.display = "block";
 
   
    
-// Retrieve vlož věci ze storage
-document.getElementById("pokus").innerHTML = sessionStorage.getItem("mistnost");
-
 
 
 /*
@@ -106,27 +100,3 @@ document.getElementById("pokus").innerHTML = sessionStorage.getItem("mistnost");
 
    */
 
- 
-
-//Modaly apky
-
-var modalHintLoz = document.getElementById('obyvak-hint-modal');
-var spanHintLoz = document.getElementsByClassName("hint-close")[0];
-
-// When the user clicks the button, open the modal 
-btnHintLoz.onclick = function() {
-  modalHintLoz.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-spanHintLoz.onclick = function() {
-    modalHintLoz.style.display = "none";
-}
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modalHintLoz) {
-      modalHintLoz.style.display = "none";
-    }
-}
