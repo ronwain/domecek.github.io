@@ -160,21 +160,8 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('po-hint').style.display = 'none';
-   // získání aktuálního stavu localStorage a nahrání nové místnosti
-   
-// Get the existing data
-var existing = sessionStorage.getItem('mistnost');
-
-    // If no existing data, create an array
-    // Otherwise, convert the localStorage string to an array
-    existing = existing ? existing.split(',') : [];
-    
-    // Add new data to localStorage Array
-    existing.push('pokoj');
-    
-    // Save back to localStorage
-    sessionStorage.setItem('mistnost', existing.toString());
-
+   //
+    sessionStorage.setItem("pokoj", "pokoj");
 
 } else {
    document.getElementById('gohome').style.display = 'none';

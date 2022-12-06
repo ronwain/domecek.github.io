@@ -178,7 +178,9 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('lo-hint').style.display = 'none';
-   localStorage.setItem("mistnost", "loznice")
+ 
+   sessionStorage.setItem("loznice", "loznice");
+
 
 } else {
    document.getElementById('gohome').style.display = 'none';

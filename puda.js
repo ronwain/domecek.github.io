@@ -124,7 +124,8 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('pu-hint').style.display = 'none';
-   sesionStorage.setItem("mistnost", "puda")
+
+   sessionStorage.setItem("puda", "puda");
 
 } else {
    document.getElementById('gohome').style.display = 'none';

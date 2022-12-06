@@ -145,10 +145,8 @@ function clickME(event) {
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('di-hint').style.display = 'none';
  
-   var existing = sessionStorage.getItem('mistnost');
-   existing = existing ? existing.split(',') : [];
-   existing.push('dilna');
-   sessionStorage.setItem('mistnost', existing.toString());
+    sessionStorage.setItem("dilna", "dilna");
+
 
 
 } else {

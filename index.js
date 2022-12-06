@@ -1,28 +1,82 @@
 
-let storage = ["koupelna", "kuchyn", "obyvak"];
+let storage = ["koupelna", "kuchyne", "obyvak"];
 
 storage.map((item) => {
   console.log(item);
 });
 
 
-
-if(sessionStorage.getItem("obyvak") === null){
-    console.log("Item does not exist in localstoarge");
+if(sessionStorage.getItem("obyvak") === null){   
 }else{
-   console.log("Item exists in localstorage");
    var ukaz = document.getElementById("star_obyvak");
    ukaz.classList.add("svit");
    ukaz.classList.remove("nesvit")
 }
 
-if(sessionStorage.getItem("mistnost") === null){
-    console.log("Item does not exist in localstoarge");
+if(sessionStorage.getItem("kuchyne") === null){
 }else{
-   console.log("Item exists in localstorage");
    var ukaz = document.getElementById("star_kuchyne");
    ukaz.classList.add("svit");
    ukaz.classList.remove("nesvit")
+}
+
+if(sessionStorage.getItem("dilna") === null){
+}else{
+   var ukaz = document.getElementById("star_dilna");
+   ukaz.classList.add("svit");
+   ukaz.classList.remove("nesvit")
+}
+
+if(sessionStorage.getItem("loznice") === null){
+}else{
+   var ukaz = document.getElementById("star_loznice");
+   ukaz.classList.add("svit");
+   ukaz.classList.remove("nesvit")
+}
+
+if(sessionStorage.getItem("okoli") === null){
+}else{
+   var ukaz = document.getElementById("star_okoli");
+   ukaz.classList.add("svit");
+   ukaz.classList.remove("nesvit")
+}
+
+if(sessionStorage.getItem("pokoj") === null){
+}else{
+   var ukaz = document.getElementById("star_pokoj");
+   ukaz.classList.add("svit");
+   ukaz.classList.remove("nesvit")
+}
+
+if(sessionStorage.getItem("puda") === null){
+}else{
+   var ukaz = document.getElementById("star_puda");
+   ukaz.classList.add("svit");
+   ukaz.classList.remove("nesvit")
+}
+
+if(sessionStorage.getItem("koupelna") === null){
+}else{
+   var ukaz = document.getElementById("star_koupelna");
+   ukaz.classList.add("svit");
+   ukaz.classList.remove("nesvit")
+}
+
+
+
+if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda")) {
+    console.log("prasarna");
+    
+var modalHintLoz = document.getElementById('obyvak-hint-modal');
+var firework = document.getElementById('fire');
+
+
+modalHintLoz.style.display = "block";
+firework.style.display = "block";
+
+
+} else {
+    console.log("nope")
 }
 
 // Kontrola localStorage -> projetí všech místností podle toho přirazení class
@@ -52,3 +106,27 @@ document.getElementById("pokus").innerHTML = sessionStorage.getItem("mistnost");
 
    */
 
+ 
+
+//Modaly apky
+
+var modalHintLoz = document.getElementById('obyvak-hint-modal');
+var spanHintLoz = document.getElementsByClassName("hint-close")[0];
+
+// When the user clicks the button, open the modal 
+btnHintLoz.onclick = function() {
+  modalHintLoz.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanHintLoz.onclick = function() {
+    modalHintLoz.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modalHintLoz) {
+      modalHintLoz.style.display = "none";
+    }
+}

@@ -161,6 +161,9 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('ku-hint').style.display = 'none';
+   sessionStorage.setItem("kuchyne", "kuchyne");
+   
+   /*
    // získání aktuálního stavu localStorage a nahrání nové místnosti
    
 // Get the existing data
@@ -176,7 +179,7 @@ var existing = sessionStorage.getItem('mistnost');
     // Save back to localStorage
     sessionStorage.setItem('mistnost', existing.toString());
 
-
+*/
 } else {
    document.getElementById('gohome').style.display = 'none';
 }

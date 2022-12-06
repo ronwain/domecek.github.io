@@ -150,12 +150,8 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('obyvak-hint').style.display = 'none';
-  
-   
-   var existing = sessionStorage.getItem('mistnost');
-   existing = existing ? existing.split(',') : [];
-   existing.push('obyvak');
-   sessionStorage.setItem('mistnost', existing.toString());
+
+   sessionStorage.setItem("obyvak", "obyvak");
 
 } else {
    document.getElementById('gohome').style.display = 'none';

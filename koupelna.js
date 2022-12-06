@@ -160,12 +160,8 @@ function clickME(event) {
    document.getElementById('gohome').style.display = 'block'; 
    document.getElementById('zmiz').style.display = 'none';
    document.getElementById('koupelna-hint').style.display = 'none';
-   
- 
-    var existing = sessionStorage.getItem('mistnost');
-    existing = existing ? existing.split(',') : [];
-    existing.push('koupelna');
-    sessionStorage.setItem('mistnost', existing.toString());
+    
+   sessionStorage.setItem("koupelna", "koupelna");
 
 } else {
    document.getElementById('gohome').style.display = 'none';
