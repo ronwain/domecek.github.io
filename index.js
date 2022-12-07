@@ -5,12 +5,28 @@ storage.map((item) => {
   console.log(item);
 });
 
+function rozsvit(hvezda) {
+   var ukaz = document.getElementById(hvezda);
+   ukaz.classList.add("svit");
+   ukaz.classList.remove("nesvit")
+}
+
+function komplet(mistnost, hvezda) {
+   if(sessionStorage.getItem(mistnost) === null){   
+   }else{
+      var ukaz = document.getElementById(hvezda);
+      ukaz.classList.add("svit");
+      ukaz.classList.remove("nesvit");
+   }
+}
+
+komplet("obyvak", "star_obyvak");
 
 if(sessionStorage.getItem("obyvak") === null){   
 }else{
    var ukaz = document.getElementById("star_obyvak");
    ukaz.classList.add("svit");
-   ukaz.classList.remove("nesvit")
+   ukaz.classList.remove("nesvit");
 }
 
 if(sessionStorage.getItem("kuchyne") === null){
