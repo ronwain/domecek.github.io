@@ -1,10 +1,3 @@
-
-let storage = ["koupelna", "kuchyne", "obyvak"];
-
-storage.map((item) => {
-  console.log(item);
-});
-
 function rozsvit(hvezda) {
    var ukaz = document.getElementById(hvezda);
    ukaz.classList.add("svit");
@@ -116,3 +109,28 @@ if (sessionStorage.getItem("dilna") && sessionStorage.getItem("puda") && session
 
    */
 
+
+// Rules modal
+var modal = document.getElementById('rulesModal');
+var closeBtn = document.getElementsByClassName("js-close")[0];
+
+closeBtn.onclick = function() {
+    modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+    localStorage.setItem('modalPravidla', true);
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        localStorage.setItem('modalPravidla', true);
+    }
+}
+
+
+if(localStorage.getItem('modalPravidla')) {
+   modal.classList.add('hide');
+}
